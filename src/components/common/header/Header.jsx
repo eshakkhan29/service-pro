@@ -6,7 +6,7 @@ import MainNav from './MainNav';
 
 const Header = () => {
     return (
-        <div>
+        <div className='container'>
             {/* top */}
             <div>
                 <div className='d-flex align-items-center fs-5 py-3'>

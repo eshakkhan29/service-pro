@@ -1,0 +1,66 @@
+.banner {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.65)), url("/public/images/banner/banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerHeading {
+    font-size: 40px;
+    text-align: center;
+    padding: 150px 0px;
+}
+
+.sectionHeader {
+    margin: 50px 0px;
+}
+
+.serviceHeading {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+
+.serviceParagraph {
+    font-size: 16px;
+    color: #17182E;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.services {
+    grid-row-gap: 50px;
+}
+
+.cardImage {
+    width: 350px;
+}
+
+.quoteButton {
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    background-color: #30475E;
+    border-radius: 7px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.quoteButton:hover{
+    background-color: #C05684;
+}
+
+.linkText {
+    display: inline-block;
+    color: #C05684;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.linkText:hover {
+    border-bottom: 1px solid #C05684;
+    color: black;
+}

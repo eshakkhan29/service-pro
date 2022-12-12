@@ -19,7 +19,7 @@ const MainNav = () => {
                         <div className='dropdownService shadow-sm'>
                             <NavLink to="/">Commercial services
                                 <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServices shadow-sm d-flex flex-column gap-2'>
+                                <div className='dropdownServices shadow-sm d-flex flex-column gap-2 p-3'>
                                     <NavLink to="#">Commercial Disinfectant Cleaning
                                     </NavLink>
                                     <NavLink to="#">Office Cleaning
@@ -55,7 +55,7 @@ const MainNav = () => {
                         <div className='dropdownServiceButton shadow-sm'>
                             <NavLink to="#">Commercial services
                                 <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2'>
+                                <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2 text-start p-3'>
                                     <NavLink to="#">Commercial Disinfectant Cleaning
                                     </NavLink>
                                     <NavLink to="#">Office Cleaning
