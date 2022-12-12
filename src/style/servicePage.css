@@ -1,0 +1,46 @@
+.pageBanner {
+    background-color: #30475e;
+}
+
+.pageBanner h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.pageBgPatten {
+    background-image: url('/public/images/bg-body.jpg');
+}
+
+.pageTitle h1 {
+    font-size: 45px;
+    color: #17182e;
+}
+
+.pageTitle p {
+    font-size: 18px;
+    color: #17182e;
+    line-height: 1.8;
+}
+
+.pageBottomText {
+    margin-top: 25px;
+}
+
+.pageBottomText {
+    color: #17182E;
+    font-weight: 500;
+}
+
+.pageBottomText span {
+    font-weight: 700;
+}
+
+.checkIcon {
+    color: #30475e;
+}
+
+.serviceFeature {
+    font-size: 18px;
+}
