@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { MdMail, MdPhone } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import '../../../style/footer.css'
+import '../../style/footer.css'
 const Footer = () => {
     // menu List
     const menus = [
@@ -15,12 +15,12 @@ const Footer = () => {
     ]
     // services List
     const services = [
-        { name: "Commercial Disinfectant Cleaning", link: "/" },
-        { name: "Office Cleaning", link: "/commercial" },
-        { name: "Restaurant & Cafe Cleaning", link: "/about-us" },
-        { name: "Gym Cleaning", link: "/contact-us" },
-        { name: "Clinic / Urgent Care Cleaning", link: "/blog" },
-        { name: "School Cleaning", link: "/faq" },
+        { name: "Commercial Disinfectant Cleaning", link: "/commercial" },
+        { name: "Office Cleaning", link: "/office" },
+        { name: "Restaurant & Cafe Cleaning", link: "/restaurant" },
+        { name: "Gym Cleaning", link: "/gym" },
+        { name: "Clinic / Urgent Care Cleaning", link: "/clinic" },
+        { name: "School Cleaning", link: "/school" },
     ]
     return (
         <div className='footerMain'>
