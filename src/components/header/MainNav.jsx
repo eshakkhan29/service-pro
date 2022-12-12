@@ -5,12 +5,12 @@ import { Nav, Navbar } from 'react-bootstrap';
 const MainNav = () => {
     // services List
     const services = [
-        { name: "Commercial Disinfectant Cleaning", link: "/" },
-        { name: "Office Cleaning", link: "/commercial" },
-        { name: "Restaurant & Cafe Cleaning", link: "/about-us" },
-        { name: "Gym Cleaning", link: "/contact-us" },
-        { name: "Clinic / Urgent Care Cleaning", link: "/blog" },
-        { name: "School Cleaning", link: "/faq" },
+        { name: "Commercial Disinfectant Cleaning", link: "/commercial" },
+        { name: "Office Cleaning", link: "/office" },
+        { name: "Restaurant & Cafe Cleaning", link: "/restaurant" },
+        { name: "Gym Cleaning", link: "/gym" },
+        { name: "Clinic / Urgent Care Cleaning", link: "/clinic" },
+        { name: "School Cleaning", link: "/school" },
     ]
     return (
         <Navbar collapseOnSelect expand="lg">
