@@ -7,8 +7,8 @@ const Home = () => {
         { name: "Commercial Disinfectant Cleaning", image: "/images/services/service1.jpg", link: "/commercial" },
         { name: "Office Cleaning", image: "/images/services/office.jpg", link: "/office" },
         { name: "Restaurant & Cafe Cleaning", image: "/images/services/restaurant.jpg", link: "/restaurant" },
-        { name: "Gym Cleaning", image: "/images/services/gym.jpg", link: "/commercial" },
-        { name: "Clinic / Urgent Care Cleaning", image: "/images/services/clinic.jpg", link: "/gym" },
+        { name: "Gym Cleaning", image: "/images/services/gym.jpg", link: "/gym" },
+        { name: "Clinic / Urgent Care Cleaning", image: "/images/services/clinic.jpg", link: "/clinic" },
         { name: "School Cleaning", image: "/images/services/school.jpg", link: "/school" },
     ]
     return (

@@ -217,3 +217,17 @@ body {
 }
 
 /* About us style end */
+
+
+/* Contact us style start */
+.getInTouch h1{
+  font-size: 35px;
+  color: #17182E;
+}
+.getInTouch p{
+  font-size: 18px;
+  color: #17182E;
+}
+
+
+/* Contact us style end */
