@@ -44,13 +44,13 @@ const MainNav = () => {
                         <IoIosArrowForward className='arrow' />
                         <div className='dropdownPages shadow-sm'>
                             <div className='d-flex flex-column gap-2'>
-                                <NavLink to="#">About Us </NavLink>
-                                <NavLink to="#">Contact Us</NavLink>
-                                <NavLink to="#">FAQ</NavLink>
+                                <NavLink to="/about-us">About Us </NavLink>
+                                <NavLink to="/contact-us">Contact Us</NavLink>
+                                <NavLink to="/faq">FAQ</NavLink>
                             </div>
                         </div>
                     </NavLink>
-                    <NavLink to="#">Blog</NavLink>
+                    <NavLink to="blog">Blog</NavLink>
                     <button
                         className='bookingButton position-relative d-flex align-items-center'>Book Online
                         <IoIosArrowForward className='ms-2 mt-1' />
