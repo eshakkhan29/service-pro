@@ -52,8 +52,8 @@ const MainNav = () => {
                     </NavLink>
                     <NavLink to="#">Blog</NavLink>
                     <button
-                        className='bookingButton position-relative'>Book Online
-                        <IoIosArrowForward className='arrow' />
+                        className='bookingButton position-relative d-flex align-items-center'>Book Online
+                        <IoIosArrowForward className='ms-2 mt-1' />
                         <div className='dropdownServiceButton shadow-sm'>
                             <NavLink to="#">Commercial services
                                 <IoIosArrowForward className='ms-2' />

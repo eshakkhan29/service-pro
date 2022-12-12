@@ -7,7 +7,7 @@ const ServiceCard = ({ service }) => {
     return (
         <div className='d-flex p-0 serviceCard'>
             <div className='me-3'>
-                <img className='cardImage' src={image} alt="image" />
+                <img className='cardImage overflow-hidden h-100' src={image} alt="image" />
             </div>
             <div className='p-2'>
                 <h1 className='fs-4 mt-4'>{name}</h1>

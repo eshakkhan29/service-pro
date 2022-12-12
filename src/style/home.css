@@ -30,16 +30,21 @@
 }
 
 .services {
-    grid-row-gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    grid-row-gap: 60px;
+    grid-column-gap: 25px;
     margin-bottom: 50px;
 }
 
 .serviceCard {
-    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px 0 #0000001a;
+    border-radius: 7px;
 }
 
 .cardImage {
     width: 350px;
+    border-radius: 7px 0px 0px 7px;
 }
 
 .quoteButton {
@@ -55,18 +60,18 @@
 }
 
 .quoteButton:hover {
-    background-color: #C05684;
+    background-color: #B41310;
 }
 
 .linkText {
     display: inline-block;
-    color: #C05684;
+    color: #B41310;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .linkText:hover {
-    border-bottom: 1px solid #C05684;
+    border-bottom: 3px solid #B41310;
     color: black;
 }
