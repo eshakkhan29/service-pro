@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const ServiceCard = ({ service }) => {
     const { name, image, link } = service;
     return (
-        <div className='d-flex p-0 shadow'>
+        <div className='d-flex p-0 serviceCard'>
             <div className='me-3'>
                 <img className='cardImage' src={image} alt="image" />
             </div>
