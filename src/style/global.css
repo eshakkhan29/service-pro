@@ -171,49 +171,49 @@ body {
 
 /* navbar style css End */
 
-/* page banner style */
-.pageBanner {
-  background-color: #30475e;
+/* About us style start */
+.aboutHeader {
+  background-color: #F7F7F7;
 }
 
-.pageBanner h1 {
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  padding: 100px 0px;
-}
-
-/* page bg patten */
-.pageBgPatten {
-  background-image: url('/public/images/bg-body.jpg');
-}
-
-.pageTitle h1 {
-  font-size: 45px;
-  color: #17182e;
-}
-
-.pageTitle p {
-  font-size: 18px;
-  color: #17182e;
-  line-height: 1.8;
-}
-
-.pageBottomText {
-  margin-top: 25px;
-}
-
-.pageBottomText {
+.aboutHeaderContent h1,
+.mainHeading {
   color: #17182E;
-  font-weight: 500;
+  font-size: 40px;
 }
 
-.pageBottomText span {
-  font-weight: 700;
-}
-.checkIcon{
-  color: #30475e;
-}
-.serviceFeature{
+.aboutHeaderContent p,
+.aboutDetails p {
   font-size: 18px;
+  line-height: 1.5;
+  color: #17182E;
+  font-weight: 400;
+  margin-top: 18px;
 }
+
+.aboutImage {
+  width: 522px;
+}
+
+.aboutDetails h1 {
+  font-size: 25px;
+}
+
+.aboutBottom {
+  background-color: #F7F7F7;
+  padding: 30px 0px;
+}
+
+.guarantee {
+  font-size: 30px;
+  color: #17182E;
+  margin: 20px 0px 0px 20px;
+}
+
+.guaranteeParagraphs {
+  background-color: white;
+  padding: 30px 30px 50px;
+  margin: 20px 0px 0px;
+}
+
+/* About us style end */
