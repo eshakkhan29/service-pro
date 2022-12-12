@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import AboutUs from "./pages/AboutUs";
 import Clinic from "./pages/Clinic";
 import Commercial from "./pages/Commercial";
+import ContactUs from "./pages/ContactUs";
 import GymCleaning from "./pages/GymCleaning";
 import Home from "./pages/Home";
 import OfficeCleaning from "./pages/OfficeCleaning";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/clinic" element={<Clinic />} />
         <Route path="/school" element={<School />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>
