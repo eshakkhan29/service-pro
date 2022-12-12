@@ -3,6 +3,15 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { Link, NavLink } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 const MainNav = () => {
+    // services List
+    const services = [
+        { name: "Commercial Disinfectant Cleaning", link: "/" },
+        { name: "Office Cleaning", link: "/commercial" },
+        { name: "Restaurant & Cafe Cleaning", link: "/about-us" },
+        { name: "Gym Cleaning", link: "/contact-us" },
+        { name: "Clinic / Urgent Care Cleaning", link: "/blog" },
+        { name: "School Cleaning", link: "/faq" },
+    ]
     return (
         <Navbar collapseOnSelect expand="lg">
             <Link to="/">
@@ -19,19 +28,12 @@ const MainNav = () => {
                         <div className='dropdownService shadow-sm'>
                             <NavLink to="/">Commercial services
                                 <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServices shadow-sm d-flex flex-column gap-2'>
-                                    <NavLink to="#">Commercial Disinfectant Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Office Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Restaurant & Cafe Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Gym Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Clinic / Urgent Care Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">School Cleaning
-                                    </NavLink>
+                                <div className='dropdownServices shadow-sm d-flex flex-column gap-2 p-3'>
+                                    {services.map((service, i) => <NavLink
+                                        key={i}
+                                        to={service.link}>
+                                        {service.name}
+                                    </NavLink>)}
                                 </div>
                             </NavLink>
                         </div>
@@ -55,19 +57,12 @@ const MainNav = () => {
                         <div className='dropdownServiceButton shadow-sm'>
                             <NavLink to="#">Commercial services
                                 <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2'>
-                                    <NavLink to="#">Commercial Disinfectant Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Office Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Restaurant & Cafe Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Gym Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">Clinic / Urgent Care Cleaning
-                                    </NavLink>
-                                    <NavLink to="#">School Cleaning
-                                    </NavLink>
+                                <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2 text-start p-3'>
+                                    {services.map((service, i) => <NavLink
+                                        key={i}
+                                        to={service.link}>
+                                        {service.name}
+                                    </NavLink>)}
                                 </div>
                             </NavLink>
                         </div>
