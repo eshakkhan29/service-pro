@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* navbar style css start */
+.mailIcon,
+.phoneIcon,
+.icon {
+  color: #CB1E18;
+}
+
+.mail,
+.phone .textColor {
+  color: #17182e;
+}
+
+.logo {
+  width: 235px;
+  height: 60px;
+}
+
+.menuLink a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.menuLink a:hover {
+  color: #CB1E18;
+}
+
+.menuLink a:hover .arrow {
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.bookingButton {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #30475e;
+  outline: none;
+  border: none;
+}
+
+.bookingButton:hover .arrow {
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+.dropdownService {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid #CB1E18;
+  opacity: 0;
+  display: none;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+}
+
+.menuLink a:hover .dropdownService {
+  opacity: 1;
+  display: block;
+  top: 30px;
+}
+
+.dropdownServices {
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid #CB1E18;
+  opacity: 0;
+  display: none;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #FFF;
+}
+
+.dropdownService:hover .dropdownServices {
+  opacity: 1;
+  display: block;
+  top: 10px;
+}
+
+.dropdownServiceButton {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid #CB1E18;
+  opacity: 0;
+  display: none;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 105%;
+  right: 0;
+  background-color: #FFF;
+}
+
+.dropdownServicesMenu {
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid #CB1E18;
+  opacity: 0;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: #FFF;
+}
+
+.dropdownServiceButton:hover .dropdownServicesMenu {
+  opacity: 1;
+  top: 20px;
+}
+
+.bookingButton:hover .dropdownServiceButton {
+  display: block;
+  opacity: 1;
+}
+
+.dropdownPages {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border-top: 2px solid #CB1E18;
+  display: none;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+}
+
+.menuLink a:hover .dropdownPages {
+  display: block;
+  top: 30px;
+}
+
+/* navbar style css End */
