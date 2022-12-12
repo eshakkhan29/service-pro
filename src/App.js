@@ -1,9 +1,9 @@
-import "./App.css";
-
+import Header from "./components/common/header/Header";
+import "./style/global.css";
 function App() {
   return (
-    <div>
-      <h1 className="text-center mt-5 text-secondary">Project init</h1>
+    <div className="container">
+      <Header />
     </div>
   );
 }
