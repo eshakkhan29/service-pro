@@ -10,10 +10,13 @@ import Faq from "./pages/Faq";
 import GymCleaning from "./pages/GymCleaning";
 import Home from "./pages/Home";
 import OfficeCleaning from "./pages/OfficeCleaning";
+import CommercialForm from "./pages/pagesForm/CommercialForm";
 import Restaurant from "./pages/Restaurant";
 import School from "./pages/School";
 import "./style/global.css";
 import "./style/servicePage.css";
+import "./style/pageForm.css";
+import "./style/media.css";
 function App() {
   return (
     <div>
@@ -31,6 +34,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/commercial-form" element={<CommercialForm />} />
       </Routes>
       <Footer />
     </div>

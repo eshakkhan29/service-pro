@@ -6,11 +6,11 @@ import MainNav from './MainNav';
 
 const Header = () => {
     return (
-        <div className='container p-0'>
+        <div className='container p-0 '>
             {/* top */}
-            <div>
+            <div className='d-none d-md-block'>
                 <div className='d-flex align-items-center fs-5 py-3'>
-                    <div className='d-flex align-items-center gap-3 ms-auto'>
+                    <div className='d-flex align-items-center gap-3'>
                         <div className='d-flex align-items-center gap-2'>
                             <MdMail className='mailIcon' />
                             <p className='mb-0 mail'>info@serveprojanitorial.ca</p>

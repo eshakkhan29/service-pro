@@ -1,0 +1,85 @@
+.formPageHeader {
+    text-align: center;
+}
+
+.formPageHeader h1 {
+    color: #292b2c;
+    font-size: 35px;
+}
+
+.formPageHeader h2 {
+    color: #65686a;
+    font-size: 30px;
+}
+
+.formPageHeader p,
+.inputForm p {
+    color: #4c4e50;
+    font-size: 20px;
+}
+
+.formStepOne h2 {
+    color: #65686a;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.inputForm input {
+    outline: none;
+    border: 1px solid #6d7993;
+    padding: 8px 12px;
+}
+
+.inputForm select {
+    color: #4c4e50;
+    outline: none;
+    border: 1px solid #6d7993;
+    padding: 8px 12px;
+}
+
+.stepTowP {
+    color: #989b9d;
+    font-size: 18px;
+}
+
+.serviceSpace {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.Space-types-card {
+    background-color: #E2E5EA;
+    padding: 20px;
+}
+
+.Space-types-card h3 {
+    font-size: 18px;
+    color: #576176;
+}
+
+.toolTip {
+    color: #576176;
+}
+
+
+.inputGroup {
+    width: 195px;
+    height: 45px;
+    border: 1px solid #4c4e50;
+}
+
+.inputGroup input {
+    outline: none;
+    border: none;
+}
+
+.plusMinus {
+    background-color: #a8afbe;
+    outline: none;
+    border: none;
+    height: 43px;
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
+}

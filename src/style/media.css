@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+    .logo-link {
+        margin-left: 12px;
+    }
+
+    .navbar-toggler {
+        padding: 5px !important;
+        margin-right: 12px;
+    }
+
+    .navbar-collapse {
+        background: #f7f7f7;
+    }
+
+    
+
+    .custom-nav a,
+    .custom-nav .custom-a {
+        padding: 15px 20px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 991px) {}
