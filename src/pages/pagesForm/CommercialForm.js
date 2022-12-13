@@ -276,6 +276,31 @@ const CommercialForm = () => {
                             <input className='w-100' type="text" placeholder='Please add any other information you feel we should know about and is pertinent or missing in the above.' />
                         </div>
                         <hr />
+                        <h2>STEP 4: Let us know who we'll be contacting</h2>
+                        <p className='stepTowP'>You will instantly receive an email summarizing the information entered in this Quote Request. In addition, we will call you within the next 10 minutes to provide you a quote. Thanks you & talk real soon!</p>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
+                            <input className='w-100' type="text" placeholder='First name' />
+                            <input className='w-100' type="text" placeholder='Last name' />
+                        </div>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-2 pb-3'>
+                            <input className='w-100' type="email" placeholder='Email' />
+                            <input className='w-100' type="number" placeholder='Phone number' />
+                        </div>
+                        <hr />
+                        <h2>STEP 5: Location of the commercial space</h2>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
+                            <input className='w-100' type="text" placeholder='Street Address' />
+                            <input className='w-100' type="text" placeholder='Unit/Apt/Suite #' />
+                        </div>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-2 pb-3'>
+                            <input className='w-100' type="text" placeholder='City' />
+
+                            <input className='w-100' type="text" placeholder='Unit/Apt/Suite #' />
+                        </div>
+                        <hr />
+                        <div className='text-center pt-2 pb-4'>
+                            <button className='fromSubmitButton'>Request a quote </button>
+                        </div>
                     </div>
                 </div>
             </div>

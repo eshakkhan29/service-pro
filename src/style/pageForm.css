@@ -83,3 +83,11 @@
     font-size: 25px;
     cursor: pointer;
 }
+.fromSubmitButton{
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 12px;
+    background-color: #576176;
+    color: white;
+}
