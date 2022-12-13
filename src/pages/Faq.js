@@ -12,13 +12,13 @@ const Faq = () => {
         <div>
             <PageBanner text={"Frequently asked questions"} />
             <div className='container p-0 py-5'>
-                {faqs.map((faq, i) => <Accordion className='py-2' key={i} defaultActiveKey="0">
-                    <Accordion.Item eventKey="0">
+                {faqs.map((faq, i) => 
+                <Accordion className='py-2' key={i}>
+                    <Accordion.Item className='border-0 shadow-sm accordionItem' eventKey={i}>
                         <Accordion.Header>{faq.q}</Accordion.Header>
                         <Accordion.Body>{faq.a}</Accordion.Body>
                     </Accordion.Item>
                 </Accordion>)}
-
             </div>
         </div>
     );

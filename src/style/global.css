@@ -231,3 +231,26 @@ body {
 }
 
 /* Contact us style end */
+
+/* Blogs style start */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blogImage {
+  width: 100%;
+  height: 315px;
+}
+.seeMore{
+  text-decoration: none;
+  color: #30475e;
+  font-size: 17px;
+  font-weight: 500;
+}
+.seeMore:hover{
+  color: #B41310;
+}
+
+/* Blogs style end */
