@@ -10,7 +10,7 @@ const Header = () => {
             {/* top */}
             <div>
                 <div className='d-flex align-items-center fs-5 py-3'>
-                    <div className='d-flex align-items-center gap-3 ms-auto'>
+                    <div className='d-flex align-items-center gap-3'>
                         <div className='d-flex align-items-center gap-2'>
                             <MdMail className='mailIcon' />
                             <p className='mb-0 mail'>info@serveprojanitorial.ca</p>

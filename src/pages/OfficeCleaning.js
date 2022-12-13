@@ -30,7 +30,7 @@ const OfficeCleaning = () => {
                 />
                 <div className='text-center pb-5 pt-4'>
                     <h2 className='pageBottomText mb-4'>Click <span>Request a Quote</span> to set up an Office Cleaning</h2>
-                    <Link to={'/'}><button className='quoteButton'>Request A Quote</button></Link>
+                    <Link to={'/office-form'}><button className='quoteButton'>Request A Quote</button></Link>
                 </div>
             </div>
         </div>

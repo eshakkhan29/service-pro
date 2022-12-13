@@ -5,12 +5,12 @@ import { Nav, Navbar } from 'react-bootstrap';
 const MainNav = () => {
     // services List
     const services = [
-        { name: "Commercial Disinfectant Cleaning", link: "/commercial" },
-        { name: "Office Cleaning", link: "/office" },
-        { name: "Restaurant & Cafe Cleaning", link: "/restaurant" },
-        { name: "Gym Cleaning", link: "/gym" },
-        { name: "Clinic / Urgent Care Cleaning", link: "/clinic" },
-        { name: "School Cleaning", link: "/school" },
+        { name: "Commercial Disinfectant Cleaning", linkForm: "/commercial-form", link: "/commercial" },
+        { name: "Office Cleaning", linkForm: "/office-form", link: "/office" },
+        { name: "Restaurant & Cafe Cleaning", linkForm: "/restaurant-form", link: "/restaurant" },
+        { name: "Gym Cleaning", linkForm: "/gym-form", link: "/gym" },
+        { name: "Clinic / Urgent Care Cleaning", linkForm: "/clinic-form", link: "/clinic" },
+        { name: "School Cleaning", linkForm: "/school-form", link: "/school" },
     ]
     return (
         <Navbar collapseOnSelect expand="lg">
@@ -25,10 +25,10 @@ const MainNav = () => {
                         className='position-relative'
                         to="#">Services
                         <IoIosArrowForward className='arrow' />
-                        <div className='dropdownService shadow-sm'>
+                        <div className='dropdownService text-center shadow-sm'>
                             <NavLink to="/">Commercial services
                                 <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServices shadow-sm d-flex flex-column gap-2 p-3'>
+                                <div className='dropdownServices shadow-sm d-flex flex-column text-start gap-2 p-3'>
                                     {services.map((service, i) => <NavLink
                                         key={i}
                                         to={service.link}>
@@ -54,13 +54,13 @@ const MainNav = () => {
                     <button
                         className='bookingButton position-relative d-flex align-items-center'>Book Online
                         <IoIosArrowForward className='ms-2 mt-1' />
-                        <div className='dropdownServiceButton shadow-sm'>
+                        <div className='dropdownServiceButton text-center shadow-sm'>
                             <NavLink to="#">Commercial services
                                 <IoIosArrowForward className='ms-2' />
                                 <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2 text-start p-3'>
                                     {services.map((service, i) => <NavLink
                                         key={i}
-                                        to={service.link}>
+                                        to={service.linkForm}>
                                         {service.name}
                                     </NavLink>)}
                                 </div>
