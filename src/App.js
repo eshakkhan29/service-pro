@@ -2,9 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import AboutUs from "./pages/AboutUs";
+import Blog from "./pages/Blog";
 import Clinic from "./pages/Clinic";
 import Commercial from "./pages/Commercial";
 import ContactUs from "./pages/ContactUs";
+import Faq from "./pages/Faq";
 import GymCleaning from "./pages/GymCleaning";
 import Home from "./pages/Home";
 import OfficeCleaning from "./pages/OfficeCleaning";
@@ -27,6 +29,8 @@ function App() {
         <Route path="/school" element={<School />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </div>
