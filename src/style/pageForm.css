@@ -29,7 +29,6 @@
     border: 1px solid #6d7993;
     padding: 8px 12px;
 }
-
 .inputForm select {
     color: #4c4e50;
     outline: none;
@@ -41,6 +40,57 @@
     color: #989b9d;
     font-size: 18px;
 }
+
+.space-cleaned-btn {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border-top: 1px solid #414959;
+    border-bottom: 1px solid #414959;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background: transparent;
+    transition: linear 0.3s all;
+}
+
+.border--right {
+    border-right: 1px solid #414959;
+}
+
+.border--left {
+    border-left: 1px solid #414959;
+}
+
+.border--middle {
+    border-left: 1px solid #414959;
+    border-right: 1px solid #414959;
+}
+
+.space-cleaned-btn:hover,
+.yes-no-btn:hover {
+    color: #fff;
+    background-color: #414959;
+    border: 1px solid #414959;
+}
+
+.button--active {
+    color: #fff;
+    background-color: #e53127;
+    border: 1px solid #414959;
+}
+
+.yes-no-btn {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border: 1px solid #414959;
+    transition: linear 0.3s all;
+}
+
+.borderRight {
+    border-right: 1px solid transparent;
+}
+
 
 .serviceSpace {
     display: grid;
@@ -83,7 +133,8 @@
     font-size: 25px;
     cursor: pointer;
 }
-.fromSubmitButton{
+
+.fromSubmitButton {
     outline: none;
     border: none;
     border-radius: 7px;

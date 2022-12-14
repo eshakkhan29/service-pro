@@ -13,13 +13,21 @@ const CommercialForm = () => {
     const [bathrooms, setBathrooms] = useState(0);
     const [cafeterias, setCafeterias] = useState(0);
     const [lounging, setLounging] = useState(0);
+    const [yesNo, setYesNo] = useState("no");
+    const [buttonGroup, setButtonGroup] = useState("outside");
     return (
         <div>
             <PageBanner text={"Request a Quote – Commercial Disinfectant Cleaning"} />
+
+            {/* full page */}
             <div className='pageBgPatten'>
                 <div className='container p-0 py-5'>
+                    {/* page heading */}
                     <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
+                    {/* page form full */}
                     <div className='formStepOne py-2 w-75 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+
+                        {/* Form step one */}
                         <h2>STEP 1: Tell us about your commercial space.</h2>
                         <div className='inputForm d-flex align-items-center justify-content-between py-4'>
                             <p className='m-0'>What is the primary use of the space?</p>
@@ -59,24 +67,41 @@ const CommercialForm = () => {
                                 <option value="To be determined">To be determined</option>
                             </select>
                         </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between py-3'>
+                        {/* input button group */}
+                        <div className='inputForm py-3'>
                             <p className='m-0'>What time of day would you like the space cleaned?</p>
-                            <select name="" id="">
-                                <option value="During Regular Business hours">During Regular Business hours</option>
-                                <option value="Outside Regular Business hours">Outside Regular Business hours</option>
-                                <option value="Overnight (11 p.m. to 7 a.m)">Overnight (11 p.m. to 7 a.m)</option>
-                            </select>
+                            <div className='mt-4 text-center'>
+                                <button
+                                    onClick={() => setButtonGroup("during")}
+                                    className={`space-cleaned-btn border--left ${buttonGroup == "during" ? "button--active" : ""}`}
+                                >During Regular Business hours</button>
+                                <button
+                                    onClick={() => setButtonGroup("outside")}
+                                    className={`space-cleaned-btn border--left border--middle ${buttonGroup == "outside" ? "button--active" : ""}`}
+                                >Outside Regular Business hours</button>
+                                <button
+                                    onClick={() => setButtonGroup("overnight")}
+                                    className={`space-cleaned-btn border--right ${buttonGroup == "overnight" ? "button--active" : ""}`}>Overnight (11 p.m. to 7 a.m)</button>
+                            </div>
                         </div>
+                        {/* yes no button group */}
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
                             <p className='m-0'>To your knowledge, has anyone in the space contracted COVID-19 in the last month?</p>
-                            <select name="" id="">
-                                <option value="No">No</option>
-                                <option value="Yes">Yes</option>
-                            </select>
+                            <div className='mt-4 text-center'>
+                                <button
+                                    onClick={() => setYesNo("yes")}
+                                    className={`yes-no-btn borderRight ${yesNo == "yes" ? "button--active" : ""}`}>YES</button>
+                                <button
+                                    onClick={() => setYesNo("no")}
+                                    className={`yes-no-btn ${yesNo == "no" ? "button--active" : ""}`}>No</button>
+                            </div>
                         </div>
                         <hr />
+                        {/* Form step tow */}
                         <h2>STEP 2: Select Space types.</h2>
                         <p className='stepTowP'>Select the quantity for each space type in the area you wish cleaned. This will help ensure we provide you the most accurate estimate possible in just a few minutes.</p>
+
+                        {/* services space input count */}
                         <div className='serviceSpace'>
                             <div className='Space-types-card d-flex align-items-center justify-content-center flex-column'>
                                 <h3>
@@ -97,7 +122,7 @@ const CommercialForm = () => {
                                         disabled={officesSpaces === 0}
                                         onClick={() => setOfficesSpaces(officesSpaces - 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                    <input className='border-0 text-center form-control h-100  fs-4' type="number" readOnly name='' value={officesSpaces} />
+                                    <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={officesSpaces} />
                                     <button
                                         onClick={() => setOfficesSpaces(officesSpaces + 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
@@ -122,7 +147,7 @@ const CommercialForm = () => {
                                         disabled={meetingRooms === 0}
                                         onClick={() => setMeetingRooms(meetingRooms - 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                    <input className='border-0 text-center form-control h-100  fs-4' type="number" readOnly name='' value={meetingRooms} />
+                                    <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={meetingRooms} />
                                     <button
                                         onClick={() => setMeetingRooms(meetingRooms + 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
@@ -147,7 +172,7 @@ const CommercialForm = () => {
                                         disabled={bathrooms === 0}
                                         onClick={() => setBathrooms(bathrooms - 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                    <input className='border-0 text-center form-control h-100  fs-4' type="number" readOnly name='' value={bathrooms} />
+                                    <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={bathrooms} />
                                     <button
                                         onClick={() => setBathrooms(bathrooms + 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
@@ -172,7 +197,7 @@ const CommercialForm = () => {
                                         disabled={cafeterias === 0}
                                         onClick={() => setCafeterias(cafeterias - 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                    <input className='border-0 text-center form-control h-100  fs-4' type="number" readOnly name='' value={cafeterias} />
+                                    <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={cafeterias} />
                                     <button
                                         onClick={() => setCafeterias(cafeterias + 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
@@ -197,7 +222,7 @@ const CommercialForm = () => {
                                         disabled={lounging === 0}
                                         onClick={() => setLounging(lounging - 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                    <input className='border-0 text-center form-control h-100  fs-4' type="number" readOnly name='' value={lounging} />
+                                    <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={lounging} />
                                     <button
                                         onClick={() => setLounging(lounging + 1)}
                                         className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
@@ -205,6 +230,8 @@ const CommercialForm = () => {
                             </div>
                         </div>
                         <hr />
+
+                        {/* Form step three */}
                         <h2>STEP 3: Type of Flooring</h2>
                         <p className='stepTowP'>Provide your best assessment of the overall flooring type in the area you would like cleaned</p>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -276,6 +303,7 @@ const CommercialForm = () => {
                             <input className='w-100' type="text" placeholder='Please add any other information you feel we should know about and is pertinent or missing in the above.' />
                         </div>
                         <hr />
+                        {/* Form tep four customer info */}
                         <h2>STEP 4: Let us know who we'll be contacting</h2>
                         <p className='stepTowP'>You will instantly receive an email summarizing the information entered in this Quote Request. In addition, we will call you within the next 10 minutes to provide you a quote. Thanks you & talk real soon!</p>
                         <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
@@ -287,6 +315,8 @@ const CommercialForm = () => {
                             <input className='w-100' type="number" placeholder='Phone number' />
                         </div>
                         <hr />
+
+                        {/* Form step five customer address */}
                         <h2>STEP 5: Location of the commercial space</h2>
                         <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
                             <input className='w-100' type="text" placeholder='Street Address' />
@@ -294,10 +324,24 @@ const CommercialForm = () => {
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-2 pb-3'>
                             <input className='w-100' type="text" placeholder='City' />
-
+                            <select name="" id="">
+                                <option value="Select a province">Select a province</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="Nunavut">Nunavut</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Yukon">Yukon</option>
+                            </select>
                             <input className='w-100' type="text" placeholder='Unit/Apt/Suite #' />
                         </div>
                         <hr />
+                        {/* Form submit button */}
                         <div className='text-center pt-2 pb-4'>
                             <button className='fromSubmitButton'>Request a quote </button>
                         </div>
@@ -305,7 +349,7 @@ const CommercialForm = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };
 
