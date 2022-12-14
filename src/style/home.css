@@ -6,9 +6,9 @@
 }
 
 .bannerHeading {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    padding: 150px 0px;
+    padding: 200px 0px;
 }
 
 .sectionHeader {
@@ -24,7 +24,7 @@
 
 .serviceParagraph {
     font-size: 16px;
-    color: #17182E;
+    color: var(--text);
     text-align: center;
     margin-top: 10px;
 }
@@ -52,7 +52,7 @@
     border: none;
     padding: 15px;
     font-size: 17px;
-    background-color: #30475E;
+    background-color: var(--primary);
     border-radius: 7px;
     color: white;
     font-weight: 500;
@@ -60,18 +60,18 @@
 }
 
 .quoteButton:hover {
-    background-color: #B41310;
+    background-color: var(--secondary);
 }
 
 .linkText {
     display: inline-block;
-    color: #B41310;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .linkText:hover {
-    border-bottom: 3px solid #B41310;
-    color: black;
+    border-bottom: 3px solid var(--primary);
+    color: var(--secondary);
 }
