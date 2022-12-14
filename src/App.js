@@ -18,6 +18,7 @@ import "./style/servicePage.css";
 import "./style/pageForm.css";
 import "./style/media.css";
 import OfficeCleaningForm from "./pages/pagesForm/OfficeCleaningForm";
+import RestaurantForm from "./pages/pagesForm/RestaurantForm";
 function App() {
   return (
     <div>
@@ -37,6 +38,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/commercial-form" element={<CommercialForm />} />
         <Route path="/office-form" element={<OfficeCleaningForm />} />
+        <Route path="/restaurant-form" element={<RestaurantForm />} />
       </Routes>
       <Footer />
     </div>
