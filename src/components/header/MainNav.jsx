@@ -26,7 +26,7 @@ const MainNav = () => {
                         to="#">Services
                         <IoIosArrowForward className='arrow' />
                         <div className='dropdownService text-center shadow-sm'>
-                            <NavLink to="/">Commercial services
+                            <NavLink to="/">Commercial Cleaning and Facility Management Services
                                 <IoIosArrowForward className='ms-2' />
                                 <div className='dropdownServices shadow-sm d-flex flex-column text-start gap-2 p-3'>
                                     {services.map((service, i) => <NavLink

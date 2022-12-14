@@ -17,6 +17,7 @@ import "./style/global.css";
 import "./style/servicePage.css";
 import "./style/pageForm.css";
 import "./style/media.css";
+import OfficeCleaningForm from "./pages/pagesForm/OfficeCleaningForm";
 function App() {
   return (
     <div>
@@ -35,6 +36,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/commercial-form" element={<CommercialForm />} />
+        <Route path="/office-form" element={<OfficeCleaningForm />} />
       </Routes>
       <Footer />
     </div>

@@ -10,7 +10,7 @@ const ContactUs = () => {
                     <div className='getInTouch m-auto'>
                         <h1>Get in touch</h1>
                         <p className='mt-3'>T : +1 604-265-8744</p>
-                        <p>M : info@serveprojanitorial.ca</p>
+                        <p>M : service@serveprojanitorial.ca </p>
                     </div>
                     <div>
                         <iframe

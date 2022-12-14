@@ -12,19 +12,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* color declaration */
+:root {
+  --primary: #e53127;
+  --secondary: #30475e;
+  --text: #17182e;
+}
+
 /* navbar style css start */
 .mailIcon,
 .phoneIcon {
-  color: #B41310;
+  color: var(--primary);
 }
 
 .icon {
-  color: #30475e;
+  color: var(--primary);
   transition: all 0.3s ease;
 }
 
 .icon:hover {
-  color: #B41310;
+  color: var(--secondary);
 }
 
 .mail,
@@ -39,12 +46,12 @@ body {
 
 .menuLink a {
   text-decoration: none;
-  color: #222222;
+  color: var(--text);
   font-weight: 400;
 }
 
 .menuLink a:hover {
-  color: #B41310;
+  color: var(--primary);
 }
 
 .menuLink a:hover .arrow {
@@ -59,7 +66,7 @@ body {
 .bookingButton {
   padding: 10px;
   color: #ffffff;
-  background-color: #30475e;
+  background-color: var(--primary);
   border-radius: 7px;
   outline: none;
   border: none;
@@ -67,7 +74,7 @@ body {
 }
 
 .bookingButton:hover {
-  background-color: #B41310;
+  background-color: var(--secondary);
 }
 
 .bookingButton:hover .arrow {
@@ -78,7 +85,7 @@ body {
   width: 250px;
   padding: 15px 10px;
   border-radius: 10px;
-  border-top: 2px solid #B41310;
+  border-top: 2px solid var(--primary);
   opacity: 0;
   display: none;
   transition: all 0.6s ease;
@@ -98,7 +105,7 @@ body {
   width: 350px;
   padding: 10px;
   border-radius: 10px;
-  border-top: 2px solid #CB1E18;
+  border-top: 2px solid var(--primary);
   opacity: 0;
   display: none;
   transition: all 0.6s ease;
@@ -118,7 +125,7 @@ body {
   width: 250px;
   padding: 15px 10px;
   border-radius: 10px;
-  border-top: 2px solid #CB1E18;
+  border-top: 2px solid var(--primary);
   opacity: 0;
   display: none;
   transition: all 0.6s ease;
@@ -132,7 +139,7 @@ body {
   width: 350px;
   padding: 10px;
   border-radius: 10px;
-  border-top: 2px solid #CB1E18;
+  border-top: 2px solid var(--primary);
   opacity: 0;
   transition: all 0.6s ease;
   position: absolute;
@@ -155,7 +162,7 @@ body {
   width: 200px;
   padding: 15px 20px;
   border-radius: 10px;
-  border-top: 2px solid #CB1E18;
+  border-top: 2px solid var(--primary);
   display: none;
   position: absolute;
   top: 0;
@@ -177,7 +184,7 @@ body {
 
 .aboutHeaderContent h1,
 .mainHeading {
-  color: #17182E;
+  color: var(--text);
   font-size: 40px;
 }
 
@@ -185,7 +192,7 @@ body {
 .aboutDetails p {
   font-size: 18px;
   line-height: 1.5;
-  color: #17182E;
+  color: var(--text);
   font-weight: 400;
   margin-top: 18px;
 }
@@ -205,7 +212,7 @@ body {
 
 .guarantee {
   font-size: 30px;
-  color: #17182E;
+  color: var(--text);
   margin: 20px 0px 0px 20px;
 }
 
@@ -221,12 +228,12 @@ body {
 /* Contact us style start */
 .getInTouch h1 {
   font-size: 35px;
-  color: #17182E;
+  color: var(--text);
 }
 
 .getInTouch p {
   font-size: 18px;
-  color: #17182E;
+  color: var(--text);
 }
 
 /* Contact us style end */
@@ -242,14 +249,16 @@ body {
   width: 100%;
   height: 315px;
 }
-.seeMore{
+
+.seeMore {
   text-decoration: none;
-  color: #30475e;
+  color: var(--secondary);
   font-size: 17px;
   font-weight: 500;
 }
-.seeMore:hover{
-  color: #B41310;
+
+.seeMore:hover {
+  color: var(--primary);
 }
 
 /* Blogs style end */

@@ -1,17 +1,11 @@
 import React from 'react';
 import PageBanner from '../../components/common/PageBanner';
 import PageFormHeader from '../../components/common/PageFormHeader';
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
-import { BsFillQuestionSquareFill } from 'react-icons/bs';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import { useState } from 'react';
 import FormSpaceType from '../../components/common/FormSpaceType';
 
-const CommercialForm = () => {
-    const [commercialSpace, setCommercialSpace] = useState("")
+const OfficeCleaningForm = () => {
     const [totalSquareFootage, setTotalSquareFootage] = useState("")
-    const [heightOfCeilings, setHeightOfCeilings] = useState("")
     const [persons, setPersons] = useState("")
     const [frequency, setFrequency] = useState("")
     const [wood, setWood] = useState("")
@@ -33,17 +27,22 @@ const CommercialForm = () => {
     const [bathrooms, setBathrooms] = useState(0);
     const [cafeterias, setCafeterias] = useState(0);
     const [lounging, setLounging] = useState(0);
+    const [workStations, setWorkStations] = useState(0);
+    const [reception, setReception] = useState(0);
+    const [hallways, setHallways] = useState(0);
+    const [officeStorage, setOfficeStorage] = useState(0);
+    const [toiletStalls, setToiletStalls] = useState(0);
     const [yesNo, setYesNo] = useState("no");
     const [buttonGroup, setButtonGroup] = useState("outside");
     const fullData = {
-        order: "commercial",
-        commercialSpace, totalSquareFootage, heightOfCeilings, persons, frequency,
+        order: "office",
+        totalSquareFootage, persons, frequency,
         covid: yesNo,
         time_of_day: buttonGroup,
         user_data: { firstName, lastName, email, phone },
         location: { address, city, postalCode, unit, province },
         type_of_flooring: { wood, cement, ceramic, carpeting, floorSpace },
-        space_types: { officesSpaces, meetingRooms, bathrooms, cafeterias, lounging }
+        space_types: { officesSpaces, meetingRooms, bathrooms, cafeterias, lounging, workStations, reception, hallways, officeStorage, toiletStalls }
     }
 
     const handelSubmit = () => {
@@ -51,39 +50,27 @@ const CommercialForm = () => {
     }
     return (
         <div>
-            <PageBanner text={"Request a Quote – Commercial Disinfectant Cleaning"} />
+            <PageBanner text={"Request a Quote – Office Cleaning"} />
 
             {/* full page */}
             <div className='pageBgPatten'>
                 <div className='container p-0 py-5'>
                     {/* page heading */}
-                    <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
+                    <PageFormHeader title={"Office Cleaning"} />
                     {/* page form full */}
                     <div className='formStepOne py-2 w-75 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
 
                         {/* Form step one */}
-                        <h2>STEP 1: Tell us about your commercial space.</h2>
-                        <div className='inputForm d-flex align-items-center justify-content-between py-4'>
-                            <p className='m-0'>What is the primary use of the space?</p>
-                            <input
-                                onChange={(e) => setCommercialSpace(e.target.value)}
-                                className='w-50' type="text" placeholder='Commercial space' />
-                        </div>
+                        <h2>STEP 1: Tell us about your office</h2>
                         <div className='inputForm py-3'>
-                            <p>Total Square Footage of entire area you want cleaned?</p>
+                            <p>Total Square Footage of entire area you want disinfected?</p>
                             <input
                                 onChange={(e) => setTotalSquareFootage(e.target.value)}
-                                className='w-100' type="text" placeholder='Enter the square footage for the total area that requires cleaning.  Feel free to add more into.' />
-                        </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between py-3'>
-                            <p className='m-0'>Height of Ceilings</p>
-                            <input
-                                onChange={(e) => setHeightOfCeilings(e.target.value)}
-                                className='w-50' type="text" placeholder='Average height of ceiling' />
+                                className='w-100' type="text" placeholder='Enter the square footage for the total area that requires disinfection.' />
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
                             <p className='m-0'>
-                                Approx. Total # of all persons in the space?</p>
+                                Total number of people in the office?</p>
                             <select
                                 onChange={(e) => setPersons(e.target.value)}
                                 name="" id="">
@@ -128,6 +115,7 @@ const CommercialForm = () => {
                                     className={`space-cleaned-btn border--right ${buttonGroup == "overnight" ? "button--active" : ""}`}>Overnight (11 p.m. to 7 a.m)</button>
                             </div>
                         </div>
+
                         {/* yes no button group */}
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
                             <p className='m-0'>To your knowledge, has anyone in the space contracted COVID-19 in the last month?</p>
@@ -148,8 +136,8 @@ const CommercialForm = () => {
                         {/* services space input count */}
                         <div className='serviceSpace'>
                             <FormSpaceType
-                                toolTip={"Total number of ENCLOSED offices (excluding work station or cubicles).  Enclosed office have ceiling to floor walls/separators with doors.  Typically reserved for management, supervisors, personnel requiring privacy or a lockable area of work.  Sometimes contain more than 1 person in an Enclosed office space."}
                                 title={"ENCLOSED Offices Spaces"}
+                                toolTip={"Total number of ENCLOSED offices (excluding work station or cubicles).  Enclosed office have ceiling to floor walls/separators with doors.  Typically reserved for management, supervisors, personnel requiring privacy or a lockable area of work.  Sometimes contain more than 1 person in an Enclosed office space."}
                                 image={"/images/servicesForm/enclosedOffice.png"}
                                 setFun={setOfficesSpaces}
                                 set={officesSpaces} />
@@ -160,11 +148,23 @@ const CommercialForm = () => {
                                 setFun={setMeetingRooms}
                                 set={meetingRooms} />
                             <FormSpaceType
-                                title={" Men & Women Bathrooms"}
-                                toolTip={"What is the total number of Bathrooms in the entire area you wished to have cleaned."}
-                                image={"/images/servicesForm/bathrooms.png"}
-                                setFun={setBathrooms}
-                                set={bathrooms} />
+                                title={"People Work Stations / Cubicles"}
+                                toolTip={"This is the number of work station or cubicles or desks.   Do not include the ENCLOSED office spaces indicated in the previous question.  A cubicle or work station is a seating location for any that is used regularly."}
+                                image={"/images/servicesForm/workstation.png"}
+                                setFun={setWorkStations}
+                                set={workStations} />
+                            <FormSpaceType
+                                title={"Reception Area(s)"}
+                                toolTip={"Reception areas include the main reception area for an office building as well as all secondary receptions including those for delivery services or warehouses.."}
+                                image={"/images/servicesForm/reception.png"}
+                                setFun={setReception}
+                                set={reception} />
+                            <FormSpaceType
+                                title={"Lounging or Employee / Visitors areas"}
+                                toolTip={"The Lounging or Employee / Visitors areas areas Separate to the reception area."}
+                                image={"/images/servicesForm/lounging_areas.png"}
+                                setFun={setLounging}
+                                set={lounging} />
                             <FormSpaceType
                                 title={" Cafeterias & Dining Areas"}
                                 toolTip={"This should include cafeterias, lounge area for employees, or kitchenettes for employee self service.  It does not include a full kitchen area for the preparation of meals."}
@@ -172,11 +172,30 @@ const CommercialForm = () => {
                                 setFun={setCafeterias}
                                 set={cafeterias} />
                             <FormSpaceType
-                                title={"Lounging or Employee / Visitors areas"}
-                                toolTip={"The Lounging or Employee / Visitors areas areas Separate to the reception area."}
-                                image={"/images/servicesForm/lounging_areas.png"}
-                                setFun={setLounging}
-                                set={lounging} />
+                                title={"Hallways"}
+                                toolTip={"To calculate the # of Hallways, we measure 1 unit as equivalent to maximum of 250 square of space.  Hence if you have 1 large hallway of 500 sq ft, select 2 units for this hallway.   Give it your best guesstimate.  We'll confirm and update it during our site visit."}
+                                image={"/images/servicesForm/hallways.png"}
+                                setFun={setHallways}
+                                set={hallways} />
+
+                            <FormSpaceType
+                                title={"Office Storage & Walkins"}
+                                toolTip={"These are Enclosed areas typically located in the office area, frequently dedicated for storage, filing, large walk in vestibules, libraries"}
+                                image={"/images/servicesForm/office_storage.png"}
+                                setFun={setOfficeStorage}
+                                set={officeStorage} />
+                            <FormSpaceType
+                                title={" Men & Women Bathrooms"}
+                                toolTip={"What is the total number of Bathrooms in the entire area you wished to have cleaned."}
+                                image={"/images/servicesForm/bathrooms.png"}
+                                setFun={setBathrooms}
+                                set={bathrooms} />
+                            <FormSpaceType
+                                title={"Toilet Stalls & Urinals"}
+                                toolTip={"In the bathrooms, what are the total # of toilet stalls & urinals? Give it you best guess.  Our quote includes cleaning the bathrooms at least once for each Frequency period you have selected in STEP 1."}
+                                image={"/images/servicesForm/toilet_stalls.png"}
+                                setFun={setToiletStalls}
+                                set={toiletStalls} />
                         </div>
                         <hr />
 
@@ -333,4 +352,4 @@ const CommercialForm = () => {
     );
 };
 
-export default CommercialForm;
+export default OfficeCleaningForm;

@@ -1,5 +1,5 @@
 .pageBanner {
-    background-color: #30475e;
+    background-color: var(--primary);
 }
 
 .pageBanner h1 {
@@ -15,12 +15,12 @@
 
 .pageTitle h1 {
     font-size: 45px;
-    color: #17182e;
+    color: var(--text);
 }
 
 .pageTitle p {
     font-size: 18px;
-    color: #17182e;
+    color: var(--text);
     line-height: 1.8;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .pageBottomText {
-    color: #17182E;
+    color: var(--text);
     font-weight: 500;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .checkIcon {
-    color: #30475e;
+    color: var(--primary);
 }
 
 .serviceFeature {
