@@ -14,9 +14,11 @@ body {
 
 /* color declaration */
 :root {
-  --primary: #e53127;
-  --secondary: #30475e;
+  --primary: #eb1c22;
+  --secondary: #ff771a;
   --text: #17182e;
+  --border: #aeaeae;
+  --bg: #aeaeae;
 }
 
 /* navbar style css start */
@@ -51,7 +53,7 @@ body {
 }
 
 .menuLink a:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .menuLink a:hover .arrow {
