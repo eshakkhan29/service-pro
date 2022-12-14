@@ -26,14 +26,14 @@
 
 .inputForm input {
     outline: none;
-    border: 1px solid #6d7993;
+    border: 1px solid var(--border);
     padding: 8px 12px;
 }
 
 .inputForm select {
     color: #4c4e50;
     outline: none;
-    border: 1px solid #6d7993;
+    border: 1px solid var(--border);
     padding: 8px 12px;
 }
 
@@ -46,8 +46,8 @@
     outline: none;
     border: 0;
     padding: 10px 20px;
-    border-top: 1px solid var(--secondary);
-    border-bottom: 1px solid var(--secondary);
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     background: transparent;
@@ -55,16 +55,16 @@
 }
 
 .border--right {
-    border-right: 1px solid var(--secondary);
+    border-right: 1px solid var(--primary);
 }
 
 .border--left {
-    border-left: 1px solid var(--secondary);
+    border-left: 1px solid var(--primary);
 }
 
 .border--middle {
-    border-left: 1px solid var(--secondary);
-    border-right: 1px solid var(--secondary);
+    border-left: 1px solid var(--primary);
+    border-right: 1px solid var(--primary);
 }
 
 .space-cleaned-btn:hover,
@@ -77,14 +77,14 @@
 .button--active {
     color: #fff;
     background-color: var(--primary);
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--primary);
 }
 
 .yes-no-btn {
     outline: none;
     border: 0;
     padding: 10px 20px;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--primary);
     transition: linear 0.2s all;
 }
 
@@ -118,7 +118,7 @@
 .inputGroup {
     width: 195px;
     height: 45px;
-    border: 1px solid #4c4e50;
+    border: 1px solid var(--primary);
 }
 
 .inputGroup input {
@@ -127,11 +127,17 @@
 }
 
 .plusMinus {
-    background-color: #a8afbe;
+    background-color: var(--primary);
+    color: white;
     outline: none;
     border: none;
     height: 43px;
     width: 100%;
     font-size: 25px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.plusMinus:hover {
+    background-color: var(--secondary);
 }

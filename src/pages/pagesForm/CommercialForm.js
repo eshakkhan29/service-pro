@@ -7,7 +7,52 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { useState } from 'react';
 import FormSpaceType from '../../components/common/FormSpaceType';
-
+const percentages = [
+    { percent: "0%" },
+    { percent: "10%" },
+    { percent: "20%" },
+    { percent: "30%" },
+    { percent: "40%" },
+    { percent: "50%" },
+    { percent: "60%" },
+    { percent: "70%" },
+    { percent: "80%" },
+    { percent: "90%" },
+    { percent: "100%" },
+]
+const frequencys = [
+    { frequency: "Daily Including weekends" },
+    { frequency: "Daily - weekdays only" },
+    { frequency: "Twice / week" },
+    { frequency: "3 times / Week" },
+    { frequency: "Every 2 weeks" },
+    { frequency: "Every 3 weeks" },
+    { frequency: "Every 4 weeks (Monthly)" },
+    { frequency: "To be determined" },
+]
+const provinces = [
+    { province: "Select a province" },
+    { province: "Alberta" },
+    { province: "British Columbia" },
+    { province: "Manitoba" },
+    { province: "New Brunswick" },
+    { province: "Newfoundland and Labrador" },
+    { province: "Nova Scotia" },
+    { province: "Nunavut" },
+    { province: "Prince Edward Island" },
+    { province: "Quebec" },
+    { province: "Saskatchewan" },
+    { province: "Yukon" },
+]
+const personsCount = [
+    { person: "0-10" },
+    { person: "11-30" },
+    { person: "31-50" },
+    { person: "51-100" },
+    { person: "101-200" },
+    { person: "201-500" },
+    { person: "501+" },
+]
 const CommercialForm = () => {
     const [commercialSpace, setCommercialSpace] = useState("")
     const [totalSquareFootage, setTotalSquareFootage] = useState("")
@@ -87,13 +132,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setPersons(e.target.value)}
                                 name="" id="">
-                                <option value="0-10">0-10</option>
-                                <option value="11-30">11-30</option>
-                                <option value="31-50">31-50</option>
-                                <option value="51-100">51-100</option>
-                                <option value="101-200">101-200</option>
-                                <option value="201-500">201-500</option>
-                                <option value="501+">501+</option>
+                                {personsCount.map((person, i) =>
+                                    <option key={i} value={person.person}>{person.person}</option>
+                                )}
                             </select>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -101,14 +142,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setFrequency(e.target.value)}
                                 name="" id="">
-                                <option value="Daily Including weekends">Daily Including weekends</option>
-                                <option value="Daily - weekdays only">Daily - weekdays only</option>
-                                <option value="Twice / week">Twice / week</option>
-                                <option value="3 times / Week">3 times / Week</option>
-                                <option value="Every 2 weeks">Every 2 weeks</option>
-                                <option value="Every 3 weeks">Every 3 weeks</option>
-                                <option value="Every 4 weeks (Monthly)">Every 4 weeks (Monthly)</option>
-                                <option value="To be determined">To be determined</option>
+                                {frequencys.map((frequency, i) =>
+                                    <option key={i} value={frequency.frequency}>{frequency.frequency}</option>
+                                )}
                             </select>
                         </div>
                         {/* input button group */}
@@ -188,17 +224,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setWood(e.target.value)}
                                 name="" id="">
-                                <option value="0%">0%</option>
-                                <option value="10%">10%</option>
-                                <option value="20%">20%</option>
-                                <option value="30%">30%</option>
-                                <option value="40%">40%</option>
-                                <option value="50%">50%</option>
-                                <option value="60%">60%</option>
-                                <option value="70%">70%</option>
-                                <option value="80%">80%</option>
-                                <option value="90%">90%</option>
-                                <option value="100%">100%</option>
+                                {percentages.map((percentage, i) =>
+                                    <option key={i} value={percentage.percent}>{percentage.percent}</option>
+                                )}
                             </select>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -206,17 +234,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setCement(e.target.value)}
                                 name="" id="">
-                                <option value="0%">0%</option>
-                                <option value="10%">10%</option>
-                                <option value="20%">20%</option>
-                                <option value="30%">30%</option>
-                                <option value="40%">40%</option>
-                                <option value="50%">50%</option>
-                                <option value="60%">60%</option>
-                                <option value="70%">70%</option>
-                                <option value="80%">80%</option>
-                                <option value="90%">90%</option>
-                                <option value="100%">100%</option>
+                                {percentages.map((percentage, i) =>
+                                    <option key={i} value={percentage.percent}>{percentage.percent}</option>
+                                )}
                             </select>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -224,17 +244,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setCarpeting(e.target.value)}
                                 name="" id="">
-                                <option value="0%">0%</option>
-                                <option value="10%">10%</option>
-                                <option value="20%">20%</option>
-                                <option value="30%">30%</option>
-                                <option value="40%">40%</option>
-                                <option value="50%">50%</option>
-                                <option value="60%">60%</option>
-                                <option value="70%">70%</option>
-                                <option value="80%">80%</option>
-                                <option value="90%">90%</option>
-                                <option value="100%">100%</option>
+                                {percentages.map((percentage, i) =>
+                                    <option key={i} value={percentage.percent}>{percentage.percent}</option>
+                                )}
                             </select>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -242,17 +254,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setCeramic(e.target.value)}
                                 name="" id="">
-                                <option value="0%">0%</option>
-                                <option value="10%">10%</option>
-                                <option value="20%">20%</option>
-                                <option value="30%">30%</option>
-                                <option value="40%">40%</option>
-                                <option value="50%">50%</option>
-                                <option value="60%">60%</option>
-                                <option value="70%">70%</option>
-                                <option value="80%">80%</option>
-                                <option value="90%">90%</option>
-                                <option value="100%">100%</option>
+                                {percentages.map((percentage, i) =>
+                                    <option key={i} value={percentage.percent}>{percentage.percent}</option>
+                                )}
                             </select>
                         </div>
                         <div className='inputForm py-3'>
@@ -301,18 +305,9 @@ const CommercialForm = () => {
                             <select
                                 onChange={(e) => setProvince(e.target.value)}
                                 name="" id="">
-                                <option value="Select a province">Select a province</option>
-                                <option value="Alberta">Alberta</option>
-                                <option value="British Columbia">British Columbia</option>
-                                <option value="Manitoba">Manitoba</option>
-                                <option value="New Brunswick">New Brunswick</option>
-                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                                <option value="Nova Scotia">Nova Scotia</option>
-                                <option value="Nunavut">Nunavut</option>
-                                <option value="Prince Edward Island">Prince Edward Island</option>
-                                <option value="Quebec">Quebec</option>
-                                <option value="Saskatchewan">Saskatchewan</option>
-                                <option value="Yukon">Yukon</option>
+                                {provinces.map((province, i) =>
+                                    <option key={i} value={province.province}>{province.province}</option>
+                                )}
                             </select>
                             <input
                                 onChange={(e) => setPostalCode(e.target.value)}
