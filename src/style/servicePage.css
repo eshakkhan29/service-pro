@@ -36,7 +36,9 @@
 .pageBottomText span {
     font-weight: 700;
 }
-
+.servicePageImg{
+    width: 50%;
+}
 .checkIcon {
     color: var(--primary);
 }
