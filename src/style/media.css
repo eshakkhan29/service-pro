@@ -1,3 +1,38 @@
+@media (max-width: 991px) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .cardImage {
+        border-radius: 7px;
+    }
+
+    .servicePageImg {
+        width: 75%;
+    }
+
+    .page-content {
+        align-items: center;
+    }
+
+    .pageBanner h1,
+    .pageTitle h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .half-width {
+        width: 50%;
+    }
+
+    .half-width img {
+        object-fit: cover;
+        object-position: left;
+    }
+}
+
 @media (max-width: 600px) {
     .logo-link {
         margin-left: 12px;
@@ -12,8 +47,6 @@
         background: #f7f7f7;
     }
 
-    
-
     .custom-nav a,
     .custom-nav .custom-a {
         padding: 15px 20px;
@@ -27,6 +60,22 @@
     .arrow {
         margin-top: 4px;
     }
-}
 
-@media (max-width: 991px) {}
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+    .servicePageImg {
+        width: 100%;
+    }
+
+    .pageBanner h1,
+    .pageTitle h1 {
+        font-size: 30px;
+    }
+
+}

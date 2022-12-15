@@ -31,10 +31,10 @@
 
 .services {
     display: grid;
-    grid-template-columns: 1fr 50%;
-    grid-row-gap: 60px;
-    grid-column-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-bottom: 50px;
+
 }
 
 .serviceCard {

@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </div>
             {/* services dialog */}
-            <div className='container p-0'>
+            <div className='container p-md-0'>
                 <div className='sectionHeader'>
                     <h1 className='serviceHeading'>Looking for the best commercial cleaning services?</h1>
                     <p className='serviceParagraph'>We Have The Resources, Scope And Experience to maintain your office workspace.</p>
