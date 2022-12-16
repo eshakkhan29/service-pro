@@ -100,11 +100,11 @@ const CommercialForm = () => {
 
             {/* full page */}
             <div className='pageBgPatten'>
-                <div className='container p-0 py-5'>
+                <div className='container p-lg-0 py-5'>
                     {/* page heading */}
                     <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
                     {/* page form full */}
-                    <div className='formStepOne py-2 w-75 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+                    <div className='formStepOne py-2 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
 
                         {/* Form step one */}
                         <h2>STEP 1: Tell us about your commercial space.</h2>
@@ -150,7 +150,7 @@ const CommercialForm = () => {
                         {/* input button group */}
                         <div className='inputForm py-3'>
                             <p className='m-0'>What time of day would you like the space cleaned?</p>
-                            <div className='mt-4 text-center'>
+                            <div className='buttonGroupCleaned mt-4 text-center'>
                                 <button
                                     onClick={() => setButtonGroup("during")}
                                     className={`space-cleaned-btn border--left ${buttonGroup == "during" ? "button--active" : ""}`}
@@ -167,7 +167,7 @@ const CommercialForm = () => {
                         {/* yes no button group */}
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
                             <p className='m-0'>To your knowledge, has anyone in the space contracted COVID-19 in the last month?</p>
-                            <div className='mt-4 text-center'>
+                            <div className='yes-no-but-group mt-4 text-center'>
                                 <button
                                     onClick={() => setYesNo("yes")}
                                     className={`yes-no-btn borderRight ${yesNo == "yes" ? "button--active" : ""}`}>Yes</button>

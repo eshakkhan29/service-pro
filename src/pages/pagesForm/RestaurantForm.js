@@ -109,7 +109,7 @@ const RestaurantForm = () => {
                     {/* page heading */}
                     <PageFormHeader title={"Restaurant & Cafe Cleaning"} />
                     {/* page form full */}
-                    <div className='formStepOne py-2 w-75 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+                    <div className='formStepOne py-2 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
 
                         {/* Form step one */}
                         <h2>STEP 1: Tell us about your restaurant or cafe</h2>
@@ -150,7 +150,7 @@ const RestaurantForm = () => {
                         {/* yes no button */}
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
                             <p className='m-0'>To your knowledge, has anyone in the space contracted COVID-19 in the last month?</p>
-                            <div className='mt-4 text-center'>
+                            <div className='yes-no-but-group mt-4 text-center'>
                                 <button
                                     onClick={() => setYesNo("yes")}
                                     className={`yes-no-btn borderRight ${yesNo == "yes" ? "button--active" : ""}`}>Yes</button>
@@ -196,7 +196,7 @@ const RestaurantForm = () => {
                                     </OverlayTrigger>
                                 </h3>
                                 <img className='py-4' src="/images/servicesForm/kitchen.png" alt="image" />
-                                <div className='mt-4 text-center'>
+                                <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setKitchen("yes")}
                                         className={`yes-no-btn borderRight ${kitchen == "yes" ? "button--active" : ""}`}>Yes</button>
@@ -219,7 +219,7 @@ const RestaurantForm = () => {
                                     </OverlayTrigger>
                                 </h3>
                                 <img className='py-4' src="/images/servicesForm/Storage_Locker.png" alt="image" />
-                                <div className='mt-4 text-center'>
+                                <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setLocker("yes")}
                                         className={`yes-no-btn borderRight ${locker == "yes" ? "button--active" : ""}`}>Yes</button>
