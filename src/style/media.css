@@ -20,6 +20,24 @@
     .pageTitle h1 {
         font-size: 40px;
     }
+
+    .formStepOne {
+        width: 95%;
+    }
+
+    .border--right {
+        border-top: 1px solid transparent;
+        border-left: 1px solid var(--primary);
+    }
+
+    .border--left {
+        border-right: 1px solid transparent;
+    }
+
+    .border--middle {
+        border-left: 1px solid var(--primary);
+        border-right: 1px solid var(--primary);
+    }
 }
 
 @media (min-width: 992px) {
@@ -31,6 +49,8 @@
         object-fit: cover;
         object-position: left;
     }
+
+    
 }
 
 @media (max-width: 600px) {
@@ -78,4 +98,31 @@
         font-size: 30px;
     }
 
+    .inputForm {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .serviceSpace {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .formStepOne {
+        width: 95%;
+    }
+
+    .buttonGroupCleaned {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .border--left {
+        border-right: 1px solid var(--primary);
+    }
+
+    .border--middle {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid var(--primary);
+    }
 }

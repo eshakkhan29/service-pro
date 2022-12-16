@@ -18,11 +18,16 @@
     font-size: 20px;
 }
 
+.formStepOne {
+    width: 75%;
+}
+
 .formStepOne h2 {
     color: #65686a;
     font-size: 24px;
     font-weight: 700;
 }
+
 
 .inputForm input {
     outline: none;
@@ -46,24 +51,20 @@
     outline: none;
     border: 0;
     padding: 10px 20px;
-    border-top: 1px solid var(--primary);
-    border-bottom: 1px solid var(--primary);
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
+    border: 1px solid var(--primary);
     background: transparent;
     transition: linear 0.2s all;
 }
 
 .border--right {
-    border-right: 1px solid var(--primary);
+    border-left: 1px solid transparent;
 }
 
 .border--left {
-    border-left: 1px solid var(--primary);
+    border-right: 1px solid transparent;
 }
 
 .border--middle {
-    border-left: 1px solid var(--primary);
     border-right: 1px solid var(--primary);
 }
 
@@ -78,6 +79,10 @@
     color: #fff;
     background-color: var(--primary);
     border: 1px solid var(--primary);
+}
+
+.yes-no-but-group {
+    display: flex;
 }
 
 .yes-no-btn {
