@@ -146,3 +146,9 @@
 .plusMinus:hover {
     background-color: var(--secondary);
 }
+
+.inputForm textarea {
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 10px;
+}

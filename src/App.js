@@ -19,6 +19,7 @@ import "./style/pageForm.css";
 import "./style/media.css";
 import OfficeCleaningForm from "./pages/pagesForm/OfficeCleaningForm";
 import RestaurantForm from "./pages/pagesForm/RestaurantForm";
+import GymCleaningForm from "./pages/pagesForm/GymCleaningForm";
 function App() {
   return (
     <div>
@@ -39,6 +40,7 @@ function App() {
         <Route path="/commercial-form" element={<CommercialForm />} />
         <Route path="/office-form" element={<OfficeCleaningForm />} />
         <Route path="/restaurant-form" element={<RestaurantForm />} />
+        <Route path="/gym-form" element={<GymCleaningForm />} />
       </Routes>
       <Footer />
     </div>
