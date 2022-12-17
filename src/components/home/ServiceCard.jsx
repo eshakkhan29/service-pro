@@ -7,7 +7,7 @@ const ServiceCard = ({ service }) => {
     return (
         <div className='d-flex flex-column flex-lg-row p-0 serviceCard'>
             <div className='me-lg-3 half-width'>
-                <img className='cardImage img-fluid h-100' src={image} alt="photo" />
+                <img className='cardImage img-fluid h-100' src={image} alt={image} />
             </div>
             <div className='p-lg-2 px-4 py-3 half-width'>
                 <h1 className='fs-4 mt-4'>{name}</h1>

@@ -130,6 +130,10 @@
         font-size: 30px;
     }
 
+    .pageBanner h1 {
+        padding: 40px 0px;
+    }
+
     .inputForm {
         flex-direction: column;
         gap: 15px;
@@ -161,7 +165,11 @@
     .aboutHeaderContent h1,
     .mainHeading {
         color: var(--text);
-        font-size: 22px;
+        font-size: 24px;
+    }
+
+    .sub-heading {
+        font-size: 22px !important;
     }
 
     .guarantee {
@@ -170,5 +178,34 @@
 
     .blog {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menuLinks .menuLink,
+    .menuLinks a {
+
+        display: inline-block;
+    }
+
+    .m20 {
+        margin-bottom: 20px !important;
+    }
+
+    .mt20,
+    .serviceMenu20:first-child {
+        margin-top: 20px;
+    }
+
+    .dropdownServices {
+        left: -125px;
+        width: 347px;
+        padding: 0 20px !important;
+    }
+
+    .dropdownPages {
+        padding: 0 20px !important;
+    }
+
+    .menuLink:hover .dropdownServices {
+        height: 300px;
     }
 }

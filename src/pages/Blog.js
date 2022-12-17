@@ -20,7 +20,7 @@ const Blog = () => {
                         {blogs.map((blog, i) =>
                             <div key={i} className='bg-white serviceCard'>
                                 <div>
-                                    <img className='overflow-hidden blogImage' src={blog.image} alt="photo" />
+                                    <img className='overflow-hidden blogImage' src={blog.image} alt={blog.image} />
                                 </div>
                                 <div className='p-3'>
                                     <h1 className='fs-3'>{blog.title}</h1>

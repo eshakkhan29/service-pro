@@ -9,7 +9,7 @@ const ServicePageContent = ({ title, dialog, image, features }) => {
                 <p>{dialog}</p>
             </div>
             <div className='d-flex page-content flex-column align-items-center flex-lg-row gap-5'>
-                <img className='servicePageImg' src={image} alt="photo" />
+                <img className='servicePageImg' src={image} alt={image} />
                 <div className='d-flex flex-column gap-3'>
                     {features.map((feature, i) =>
                         <div key={i} className='d-flex gap-3'>

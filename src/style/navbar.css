@@ -26,8 +26,9 @@
 .menuLinks .menuLink,
 .menuLinks a {
     text-decoration: none;
-    color: var(--primary);
+    font-size: 18px;
     font-weight: 500;
+    color: var(--primary);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -39,13 +40,7 @@
 .menuLinks a:hover {
     color: var(--secondary);
 }
-/* .mainLink{
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-}
-.mainLink:hover{
-    border-bottom: 2px solid var(--secondary);
-} */
+
 .arrow {
     margin-left: 5px;
     transition: all 0.3s ease;
@@ -55,6 +50,51 @@
     transform: rotate(90deg);
 }
 
+/* dropdown services css */
+.dropdownServices {
+    height: 0px;
+    width: 350px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 33px;
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid var(--primary);
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.menuLink:hover .dropdownServices {
+    height: 350px;
+    overflow: visible;
+    opacity: 1;
+}
+
+/* dropdown pages */
+.dropdownPages {
+    height: 0px;
+    width: 150px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 33px;
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid var(--primary);
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.menuLink:hover .dropdownPages {
+    height: 170px;
+    overflow: visible;
+    opacity: 1;
+}
+
+/* dropdown from */
 .bookingButton {
     outline: none;
     border: none;
@@ -77,49 +117,6 @@
     transform: rotate(90deg);
 }
 
-/* dropdown services css */
-.dropdownServices {
-    height: 0px;
-    width: 350px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 33px;
-    padding: 20px;
-    background-color: white;
-    border-top: 2px solid var(--primary);
-    border-radius: 7px;
-    transition: all 0.3s ease;
-}
-
-.menuLink:hover .dropdownServices {
-    height: 350px;
-    overflow: visible;
-    opacity: 1;
-}
-
-/* dropdown pages */
-.dropdownPages {
-    height: 0px;
-    width: 150px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 33px;
-    padding: 20px;
-    background-color: white;
-    border-top: 2px solid var(--primary);
-    border-radius: 7px;
-    transition: all 0.3s ease;
-}
-
-.menuLink:hover .dropdownPages {
-    height: 170px;
-    overflow: visible;
-    opacity: 1;
-}
-
-/* dropdown from */
 .dropdown-form {
     height: 0px;
     width: 350px;
