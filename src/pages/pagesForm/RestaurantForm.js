@@ -153,10 +153,10 @@ const RestaurantForm = () => {
                             <div className='yes-no-but-group mt-4 text-center'>
                                 <button
                                     onClick={() => setYesNo("yes")}
-                                    className={`yes-no-btn borderRight ${yesNo == "yes" ? "button--active" : ""}`}>Yes</button>
+                                    className={`yes-no-btn borderRight ${yesNo === "yes" ? "button--active" : ""}`}>Yes</button>
                                 <button
                                     onClick={() => setYesNo("no")}
-                                    className={`yes-no-btn ${yesNo == "no" ? "button--active" : ""}`}>No</button>
+                                    className={`yes-no-btn ${yesNo === "no" ? "button--active" : ""}`}>No</button>
                             </div>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
@@ -199,10 +199,10 @@ const RestaurantForm = () => {
                                 <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setKitchen("yes")}
-                                        className={`yes-no-btn borderRight ${kitchen == "yes" ? "button--active" : ""}`}>Yes</button>
+                                        className={`yes-no-btn borderRight ${kitchen === "yes" ? "button--active" : ""}`}>Yes</button>
                                     <button
                                         onClick={() => setKitchen("no")}
-                                        className={`yes-no-btn ${kitchen == "no" ? "button--active" : ""}`}>No</button>
+                                        className={`yes-no-btn ${kitchen === "no" ? "button--active" : ""}`}>No</button>
                                 </div>
                             </div>
                             <div className='Space-types-card d-flex align-items-center justify-content-center flex-column'>
@@ -222,10 +222,10 @@ const RestaurantForm = () => {
                                 <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setLocker("yes")}
-                                        className={`yes-no-btn borderRight ${locker == "yes" ? "button--active" : ""}`}>Yes</button>
+                                        className={`yes-no-btn borderRight ${locker === "yes" ? "button--active" : ""}`}>Yes</button>
                                     <button
                                         onClick={() => setLocker("no")}
-                                        className={`yes-no-btn ${locker == "no" ? "button--active" : ""}`}>No</button>
+                                        className={`yes-no-btn ${locker === "no" ? "button--active" : ""}`}>No</button>
                                 </div>
                             </div>
                             <FormSpaceType

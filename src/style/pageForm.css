@@ -13,7 +13,8 @@
 }
 
 .formPageHeader p,
-.inputForm p {
+.inputForm p,
+.inputForm label {
     color: #4c4e50;
     font-size: 20px;
 }
