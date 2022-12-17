@@ -19,7 +19,7 @@ const FormSpaceType = ({ toolTip, title, image, setFun, set }) => {
                     <span className='ms-2'><BsFillQuestionSquareFill className='toolTip' /></span>
                 </OverlayTrigger>
             </h3>
-            <img className='py-4' src={image} alt="image" />
+            <img className='py-4' src={image} alt="photo" />
             <div className='inputGroup d-flex align-items-center justify-content-between'>
                 <button
                     disabled={set === 0}

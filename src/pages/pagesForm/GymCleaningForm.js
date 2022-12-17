@@ -82,7 +82,7 @@ const GymCleaningForm = () => {
     const [yesNo, setYesNo] = useState("no");
 
     const fullData = {
-        order: "restaurant",
+        order: "gym",
         totalSquareFootage, heightOfCeilings, frequency, bestTime, floors, gymCapacity, equipment,
         covid: yesNo,
         user_data: { firstName, lastName, email, phone },
