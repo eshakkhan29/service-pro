@@ -2,69 +2,61 @@ import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link, NavLink } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
+// services List
+const services = [
+    { name: "Commercial Disinfectant Cleaning", linkForm: "/commercial-form", link: "/commercial" },
+    { name: "Office Cleaning", linkForm: "/office-form", link: "/office" },
+    { name: "Restaurant & Cafe Cleaning", linkForm: "/restaurant-form", link: "/restaurant" },
+    { name: "Gym Cleaning", linkForm: "/gym-form", link: "/gym" },
+    { name: "Clinic / Urgent Care Cleaning", linkForm: "/clinic-form", link: "/clinic" },
+    { name: "School Cleaning", linkForm: "/school-form", link: "/school" },
+]
 const MainNav = () => {
-    // services List
-    const services = [
-        { name: "Commercial Disinfectant Cleaning", linkForm: "/commercial-form", link: "/commercial" },
-        { name: "Office Cleaning", linkForm: "/office-form", link: "/office" },
-        { name: "Restaurant & Cafe Cleaning", linkForm: "/restaurant-form", link: "/restaurant" },
-        { name: "Gym Cleaning", linkForm: "/gym-form", link: "/gym" },
-        { name: "Clinic / Urgent Care Cleaning", linkForm: "/clinic-form", link: "/clinic" },
-        { name: "School Cleaning", linkForm: "/school-form", link: "/school" },
-    ]
     return (
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar  collapseOnSelect expand="lg">
             <Link to="/">
                 <img className='logo' src="/images/logo/sample-logo.png" alt="photo" />
             </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="ms-auto menuLink fs-5 d-flex align-items-center gap-lg-5 gap-3">
-                    <NavLink to="home">Home</NavLink>
-                    <NavLink
-                        className='position-relative'
-                        to="#">Services
+                <Nav className="ms-auto menuLinks fs-5 d-flex align-items-center gap-lg-5 gap-3">
+                    <NavLink className="menuLink mainLink" to="home">Home</NavLink>
+                    <div
+                        className='position-relative menuLink m-0'
+                    >Services
                         <IoIosArrowForward className='arrow' />
-                        <div className='dropdownService text-center shadow-sm'>
-                            <NavLink to="/">Commercial Cleaning and Facility Management Services
-                                <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServices shadow-sm d-flex flex-column text-start gap-2 p-3'>
-                                    {services.map((service, i) => <NavLink
-                                        key={i}
-                                        to={service.link}>
-                                        {service.name}
-                                    </NavLink>)}
-                                </div>
-                            </NavLink>
+                        <div className='dropdownServices shadow-sm d-flex flex-column text-start gap-3'>
+                            {services.map((service, i) =>
+                                <NavLink
+                                    key={i}
+                                    className="menuLink"
+                                    to={service.link}>
+                                    {service.name}
+                                </NavLink>)}
                         </div>
-                    </NavLink>
-                    <NavLink
-                        className='position-relative'
+                    </div>
+                    <div
+                        className='position-relative m-0 menuLink'
                         to="#">Our company
                         <IoIosArrowForward className='arrow' />
-                        <div className='dropdownPages shadow-sm'>
-                            <div className='d-flex flex-column gap-2'>
-                                <NavLink to="/about-us">About Us </NavLink>
-                                <NavLink to="/contact-us">Contact Us</NavLink>
-                                <NavLink to="/faq">FAQ</NavLink>
-                            </div>
+                        <div className='dropdownPages shadow-sm d-flex flex-column gap-3'>
+                            <NavLink className="menuLink" to="/about-us">About Us </NavLink>
+                            <NavLink className="menuLink" to="/contact-us">Contact Us</NavLink>
+                            <NavLink className="menuLink" to="/faq">FAQ</NavLink>
                         </div>
-                    </NavLink>
-                    <NavLink to="blog">Blog</NavLink>
+                    </div>
+                    <NavLink className="menuLink mainLink" to="blog">Blog</NavLink>
                     <button
                         className='bookingButton position-relative d-flex align-items-center'>Book Online
-                        <IoIosArrowForward className='ms-2 mt-1' />
-                        <div className='dropdownServiceButton text-center shadow-sm'>
-                            <NavLink to="#">Commercial services
-                                <IoIosArrowForward className='ms-2' />
-                                <div className='dropdownServicesMenu shadow-sm d-flex flex-column gap-2 text-start p-3'>
-                                    {services.map((service, i) => <NavLink
-                                        key={i}
-                                        to={service.linkForm}>
-                                        {service.name}
-                                    </NavLink>)}
-                                </div>
-                            </NavLink>
+                        <IoIosArrowForward className='ms-2 mt-1 btn-arrow' />
+                        <div className='dropdown-form shadow-sm d-flex flex-column gap-3 text-start'>
+                            {services.map((service, i) =>
+                                <NavLink
+                                    key={i}
+                                    className="menuLink"
+                                    to={service.linkForm}>
+                                    {service.name}
+                                </NavLink>)}
                         </div>
                     </button>
                 </Nav>
