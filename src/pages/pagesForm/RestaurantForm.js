@@ -195,7 +195,7 @@ const RestaurantForm = () => {
                                         <span className='ms-2'><BsFillQuestionSquareFill className='toolTip' /></span>
                                     </OverlayTrigger>
                                 </h3>
-                                <img className='py-4' src="/images/servicesForm/kitchen.png" alt="image" />
+                                <img className='py-4' src="/images/servicesForm/kitchen.png" alt="photo" />
                                 <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setKitchen("yes")}
@@ -218,7 +218,7 @@ const RestaurantForm = () => {
                                         <span className='ms-2'><BsFillQuestionSquareFill className='toolTip' /></span>
                                     </OverlayTrigger>
                                 </h3>
-                                <img className='py-4' src="/images/servicesForm/Storage_Locker.png" alt="image" />
+                                <img className='py-4' src="/images/servicesForm/Storage_Locker.png" alt="photo" />
                                 <div className='yes-no-but-group mt-4 text-center'>
                                     <button
                                         onClick={() => setLocker("yes")}

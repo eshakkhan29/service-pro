@@ -15,7 +15,7 @@ const MainNav = () => {
     return (
         <Navbar collapseOnSelect expand="lg">
             <Link to="/">
-                <img className='logo' src="/images/logo/sample-logo.png" alt="" />
+                <img className='logo' src="/images/logo/sample-logo.png" alt="photo" />
             </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

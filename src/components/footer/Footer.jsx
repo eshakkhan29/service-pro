@@ -27,7 +27,7 @@ const Footer = () => {
             <div className='container p-md-0'>
                 <div className='d-flex flex-column justify-content-between flex-md-row'>
                     <div className='fs-5 text-white'>
-                        <img className='logo' src="/images/logo/sample-logo.png" alt="" />
+                        <img className='logo' src="/images/logo/sample-logo.png" alt="logo" />
                         <div className='d-flex align-items-center gap-2 mt-md-5 mt-3'>
                             <MdMail className='text-white' />
                             <p className='m-0 mail text-white'>info@serveprojanitorial.ca</p>
