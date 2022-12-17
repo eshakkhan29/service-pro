@@ -1,10 +1,6 @@
 import React from 'react';
 import PageBanner from '../../components/common/PageBanner';
 import PageFormHeader from '../../components/common/PageFormHeader';
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
-import { BsFillQuestionSquareFill } from 'react-icons/bs';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import { useState } from 'react';
 import FormSpaceType from '../../components/common/FormSpaceType';
 const percentages = [
