@@ -47,7 +47,7 @@ const MainNav = () => {
                     </div>
                     <NavLink className="menuLink m20" to="blog">Blog</NavLink>
                     <button
-                        className='bookingButton position-relative m20 d-flex align-items-center'>Book Online
+                        className='bookingButton position-relative m20 d-none d-lg-flex align-items-center'>Book Online
                         <IoIosArrowForward className='ms-2 mt-1 btn-arrow' />
                         <div className='dropdown-form shadow-sm d-flex flex-column gap-3 text-start'>
                             {services.map((service, i) =>
