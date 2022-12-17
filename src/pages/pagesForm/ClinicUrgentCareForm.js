@@ -3,7 +3,6 @@ import PageBanner from '../../components/common/PageBanner';
 import PageFormHeader from '../../components/common/PageFormHeader';
 import { useState } from 'react';
 import FormSpaceType from '../../components/common/FormSpaceType';
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 const percentages = [
     { percent: "0%" },
     { percent: "10%" },
@@ -27,12 +26,11 @@ const frequencys = [
     { frequency: "Every 4 weeks (Monthly)" },
     { frequency: "To be determined" },
 ]
-const gymCapacitys = [
-    { capacity: "1-25" },
-    { capacity: "26-50" },
-    { capacity: "51-100" },
-    { capacity: "101-150" },
-    { capacity: "More than 150" },
+const waitingrooms = [
+    { room: "1-25" },
+    { room: "26-50" },
+    { room: "51-100" },
+    { room: "More than 100" },
 ]
 const provinces = [
     { province: "Select a province" },
@@ -48,17 +46,14 @@ const provinces = [
     { province: "Saskatchewan" },
     { province: "Yukon" },
 ]
-const GymCleaningForm = () => {
+const ClinicUrgentCareForm = () => {
     const [totalSquareFootage, setTotalSquareFootage] = useState("")
-    const [heightOfCeilings, setHeightOfCeilings] = useState("")
     const [frequency, setFrequency] = useState("")
-    const [gymCapacity, setGymCapacity] = useState("")
-    const [equipment, setEquipment] = useState("")
+    const [waitingRoom, setWaitingRoom] = useState("")
     const [bestTime, setBestTime] = useState("")
     const [wood, setWood] = useState("")
-    const [floors, setFloors] = useState(0)
     const [cement, setCement] = useState("")
-    const [rubber, setRubber] = useState("")
+    const [carpeting, setCarpeting] = useState("")
     const [linoleum, setLinoleum] = useState("")
     const [ceramic, setCeramic] = useState("")
     const [floorSpace, setFloorSpace] = useState("")
@@ -71,24 +66,22 @@ const GymCleaningForm = () => {
     const [postalCode, setPostalCode] = useState("")
     const [city, setCity] = useState("")
     const [province, setProvince] = useState("")
+    const [doctorOffices, setDoctorOffices] = useState(0);
+    const [bathrooms, setBathrooms] = useState(0);
+    const [officeStorage, setOfficeStorage] = useState(0);
     const [toiletStalls, setToiletStalls] = useState(0);
-    const [workoutStudios, setWorkoutStudios] = useState(0);
-    const [lockerRooms, setLockerRooms] = useState(0);
-    const [steamRoom, setSteamRoom] = useState(0);
-    const [showerStalls, setShowerStalls] = useState(0);
     const [reception, setReception] = useState(0);
-    const [officesSpaces, setOfficesSpaces] = useState(0);
     const [cafeterias, setCafeterias] = useState(0);
     const [yesNo, setYesNo] = useState("no");
 
     const fullData = {
         order: "restaurant",
-        totalSquareFootage, heightOfCeilings, frequency, bestTime, floors, gymCapacity, equipment,
+        totalSquareFootage, frequency, bestTime, waitingRoom,
         covid: yesNo,
         user_data: { firstName, lastName, email, phone },
         location: { address, city, postalCode, unit, province },
-        type_of_flooring: { wood, cement, ceramic, rubber,linoleum, floorSpace },
-        space_types: { toiletStalls, workoutStudios, lockerRooms, steamRoom, showerStalls, cafeterias, reception, officesSpaces }
+        type_of_flooring: { wood, cement, ceramic, carpeting, linoleum, floorSpace },
+        space_types: { toiletStalls, doctorOffices, bathrooms, officeStorage, cafeterias, reception }
     }
 
     const handelSubmit = () => {
@@ -96,50 +89,31 @@ const GymCleaningForm = () => {
     }
     return (
         <div>
-            <PageBanner text={"Request a Quote – Gym Cleaning"} />
+            <PageBanner text={"Request a Quote – Cleaning / Urgent Care Cleaning"} />
 
             {/* full page */}
             <div className='pageBgPatten'>
                 <div className='container p-0 py-5'>
                     {/* page heading */}
-                    <PageFormHeader title={"Gym Cleaning"} />
+                    <PageFormHeader title={"﻿Clinic/Urgent Care Cleaning"} />
                     {/* page form full */}
                     <div className='formStepOne py-2 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
 
                         {/* Form step one */}
-                        <h2>STEP 1: Tell us about your gym</h2>
+                        <h2>STEP 1: Tell us about your clinic/urgent care facility</h2>
                         <div className='inputForm py-3'>
-                            <p>Total Square Footage of entire area you want cleaned?</p>
+                            <p>What is the total square footage of the area you want sanitized and disinfected?</p>
                             <input
                                 onChange={(e) => setTotalSquareFootage(e.target.value)}
                                 className='w-100' type="text" placeholder='Enter the square footage for the total area that requires cleaning.  Feel free to add more into.' />
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
-                            <p className='m-0'>Height of Ceilings</p>
-                            <input
-                                onChange={(e) => setHeightOfCeilings(e.target.value)}
-                                className='w-50' type="text" placeholder='Average height of ceiling' />
-                        </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between py-3'>
-                            <p className='m-0'>How many floors?</p>
-                            <div className='inputGroup d-flex align-items-center justify-content-between'>
-                                <button
-                                    disabled={floors === 0}
-                                    onClick={() => setFloors(floors - 1)}
-                                    className='plusMinus d-flex align-items-center justify-content-center'><AiOutlineMinus /></button>
-                                <input className='border-0 text-center form-control h-100  fs-5' type="text" readOnly name='' value={floors} />
-                                <button
-                                    onClick={() => setFloors(floors + 1)}
-                                    className='plusMinus d-flex align-items-center justify-content-center'><AiOutlinePlus /></button>
-                            </div>
-                        </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between py-3'>
-                            <p className='m-0'>Total capacity of gym?</p>
+                            <p className='m-0'>Total capacity of the waiting room and evaluation rooms</p>
                             <select
-                                onChange={(e) => setGymCapacity(e.target.value)}
+                                onChange={(e) => setWaitingRoom(e.target.value)}
                                 name="" id="">
-                                {gymCapacitys.map((capacity, i) =>
-                                    <option key={i} value={capacity.capacity}>{capacity.capacity}</option>
+                                {waitingrooms.map((room, i) =>
+                                    <option key={i} value={room.room}>{room.room}</option>
                                 )}
                             </select>
                         </div>
@@ -171,50 +145,19 @@ const GymCleaningForm = () => {
                                     className={`yes-no-btn ${yesNo == "no" ? "button--active" : ""}`}>No</button>
                             </div>
                         </div>
-                        <hr />
-                        <div className='inputForm py-3'>
-                            <h3>What equipment would you like cleaned?</h3>
-                            <p className='stepTowP'>Please list the types of machines and weights and how many of each you'd like cleaned (dumbbells, barbells, treadmills, bicycles, etc)</p>
-                            <textarea
-                                onChange={(e) => setEquipment(e.target.value)}
-                                className='w-100' name="" id="" cols="30" rows="7"></textarea>
-                        </div>
+
                         <hr />
                         {/* Form step tow */}
-                        <h2>STEP 2: Additional Spaces to Clean</h2>
-
+                        <h2>STEP 2: Select Space types</h2>
+                        <p>Select the quantity for each space type in the area you wish cleaned. This will help ensure we provide you the most accurate estimate possible in just a few minutes.</p>
                         {/* services space input count */}
                         <div className='serviceSpace'>
                             <FormSpaceType
-                                title={"Enclosed workout_studios"}
-                                toolTip={"How many studio rooms do you have for classroom workouts, like yoga, Pilates, or spinning?"}
-                                image={"/images/servicesForm/workout_studios.png"}
-                                setFun={setWorkoutStudios}
-                                set={workoutStudios} />
-                            <FormSpaceType
-                                title={"Locker Rooms"}
-                                toolTip={"How many locker rooms do you have in total?"}
-                                image={"/images/servicesForm/Storage_Locker.png"}
-                                setFun={setLockerRooms}
-                                set={lockerRooms} />
-                            <FormSpaceType
-                                title={"Sauna / Steam Room"}
-                                toolTip={"Total number of saunas or steam rooms"}
-                                image={"/images/servicesForm/steam_oom.png"}
-                                setFun={setSteamRoom}
-                                set={steamRoom} />
-                            <FormSpaceType
-                                title={"Shower Stalls"}
-                                toolTip={"Total number of shower stalls available (men & women)"}
-                                image={"/images/servicesForm/shower_talls.png"}
-                                setFun={setShowerStalls}
-                                set={showerStalls} />
-                            <FormSpaceType
-                                title={"Toilet Stalls & Urinals"}
-                                toolTip={"In the bathrooms, what are the total # of toilet stalls & urinals? Give it you best guess.  Our quote includes cleaning the bathrooms at least once for each Frequency period you have selected in STEP 1."}
-                                image={"/images/servicesForm/toilet_stalls.png"}
-                                setFun={setToiletStalls}
-                                set={toiletStalls} />
+                                title={"Doctor's Offices/Evaluation Rooms"}
+                                toolTip={"Doctor's Offices/Evaluation Rooms"}
+                                image={"/images/servicesForm/doctors_offices.png"}
+                                setFun={setDoctorOffices}
+                                set={doctorOffices} />
                             <FormSpaceType
                                 title={"Reception Area / Employee Lounge"}
                                 toolTip={"Reception areas include the main reception area for an office building as well as all secondary receptions including those for delivery services or warehouses.."}
@@ -222,17 +165,29 @@ const GymCleaningForm = () => {
                                 setFun={setReception}
                                 set={reception} />
                             <FormSpaceType
-                                title={"Enclosed Office / Physio rooms"}
-                                toolTip={"Total number of enclosed office or physiotherapy evaluation rooms"}
-                                image={"/images/servicesForm/enclosedOffice.png"}
-                                setFun={setOfficesSpaces}
-                                set={officesSpaces} />
+                                title={" Men & Women Bathrooms"}
+                                toolTip={"What is the total number of Bathrooms in the entire area you wished to have cleaned."}
+                                image={"/images/servicesForm/bathrooms.png"}
+                                setFun={setBathrooms}
+                                set={bathrooms} />
+                            <FormSpaceType
+                                title={"Toilet Stalls & Urinals"}
+                                toolTip={"In the bathrooms, what are the total # of toilet stalls & urinals? Give it you best guess.  Our quote includes cleaning the bathrooms at least once for each Frequency period you have selected in STEP 1."}
+                                image={"/images/servicesForm/toilet_stalls.png"}
+                                setFun={setToiletStalls}
+                                set={toiletStalls} />
                             <FormSpaceType
                                 title={"Cafeterias & Dining Areas"}
                                 toolTip={"This should include cafeterias, lounge area for employees, or kitchenettes for employee self service.  It does not include a full kitchen area for the preparation of meals."}
                                 image={"/images/servicesForm/cafeterias.png"}
                                 setFun={setCafeterias}
                                 set={cafeterias} />
+                            <FormSpaceType
+                                title={"Office Storage & Walkins"}
+                                toolTip={"These are Enclosed areas typically located in the office area, frequently dedicated for storage, filing, large walk in vestibules, libraries"}
+                                image={"/images/servicesForm/office_storage.png"}
+                                setFun={setOfficeStorage}
+                                set={officeStorage} />
                         </div>
                         <hr />
 
@@ -260,9 +215,9 @@ const GymCleaningForm = () => {
                             </select>
                         </div>
                         <div className='inputForm d-flex align-items-center justify-content-between py-3'>
-                            <p className='m-0'>Rubber Mats - Approximate % of the total floor space?</p>
+                            <p className='m-0'>Carpeting - Approximate % of the floor space? (excludes area & moveable rugs)</p>
                             <select
-                                onChange={(e) => setRubber(e.target.value)}
+                                onChange={(e) => setCarpeting(e.target.value)}
                                 name="" id="">
                                 {percentages.map((percentage, i) =>
                                     <option key={i} value={percentage.percent}>{percentage.percent}</option>
@@ -353,9 +308,8 @@ const GymCleaningForm = () => {
                     </div>
                 </div>
             </div>
-
         </div >
     );
 };
 
-export default GymCleaningForm;
+export default ClinicUrgentCareForm;
