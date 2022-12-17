@@ -77,6 +77,18 @@ body {
   font-size: 18px;
   color: var(--text);
 }
+.contactButton{
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  padding: 10px 15px;
+  color: white;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+.contactButton:hover{
+  background-color: var(--secondary);
+}
 
 /* Contact us style end */
 

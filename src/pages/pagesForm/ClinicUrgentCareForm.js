@@ -139,10 +139,10 @@ const ClinicUrgentCareForm = () => {
                             <div className='yes-no-but-group mt-4 text-center'>
                                 <button
                                     onClick={() => setYesNo("yes")}
-                                    className={`yes-no-btn borderRight ${yesNo == "yes" ? "button--active" : ""}`}>Yes</button>
+                                    className={`yes-no-btn borderRight ${yesNo === "yes" ? "button--active" : ""}`}>Yes</button>
                                 <button
                                     onClick={() => setYesNo("no")}
-                                    className={`yes-no-btn ${yesNo == "no" ? "button--active" : ""}`}>No</button>
+                                    className={`yes-no-btn ${yesNo === "no" ? "button--active" : ""}`}>No</button>
                             </div>
                         </div>
 
