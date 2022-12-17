@@ -100,7 +100,7 @@ const CommercialForm = () => {
 
             {/* full page */}
             <div className='pageBgPatten'>
-                <div className='container p-lg-0 py-5'>
+                <div className='container py-5'>
                     {/* page heading */}
                     <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
                     {/* page form full */}

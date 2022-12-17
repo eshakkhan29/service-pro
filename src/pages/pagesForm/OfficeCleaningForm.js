@@ -143,7 +143,7 @@ const OfficeCleaningForm = () => {
                                 >Outside Regular Business hours</button>
                                 <button
                                     onClick={() => setButtonGroup("overnight")}
-                                    className={`space-cleaned-btn border--right ${buttonGroup == "overnight" ? "button--active" : ""}`}>Overnight (11 p.m. to 7 a.m)</button>
+                                    className={`space-cleaned-btn borderLg border--right ${buttonGroup == "overnight" ? "button--active" : ""}`}>Overnight (11 p.m. to 7 a.m)</button>
                             </div>
                         </div>
 
