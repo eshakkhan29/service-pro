@@ -21,6 +21,7 @@ import OfficeCleaningForm from "./pages/pagesForm/OfficeCleaningForm";
 import RestaurantForm from "./pages/pagesForm/RestaurantForm";
 import GymCleaningForm from "./pages/pagesForm/GymCleaningForm";
 import ClinicUrgentCareForm from "./pages/pagesForm/ClinicUrgentCareForm";
+import SchoolCleaningForm from "./pages/pagesForm/SchoolCleaningForm";
 function App() {
   return (
     <div>
@@ -43,6 +44,7 @@ function App() {
         <Route path="/restaurant-form" element={<RestaurantForm />} />
         <Route path="/gym-form" element={<GymCleaningForm />} />
         <Route path="/clinic-form" element={<ClinicUrgentCareForm />} />
+        <Route path="/school-form" element={<SchoolCleaningForm />} />
       </Routes>
       <Footer />
     </div>

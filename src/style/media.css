@@ -1,4 +1,13 @@
 @media (max-width: 991px) {
+    .bannerHeading {
+        font-size: 40px;
+        padding: 150px 0px;
+    }
+
+    .serviceHeading {
+        font-size: 26px;
+    }
+
     .services {
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 30px;
@@ -21,6 +30,12 @@
         font-size: 40px;
     }
 
+    .aboutHeaderContent h1,
+    .mainHeading {
+        color: var(--text);
+        font-size: 30px;
+    }
+
     .formStepOne {
         width: 95%;
     }
@@ -38,6 +53,14 @@
         border-left: 1px solid var(--primary);
         border-right: 1px solid var(--primary);
     }
+
+    .guarantee {
+        font-size: 26px;
+    }
+
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 992px) {
@@ -50,7 +73,7 @@
         object-position: left;
     }
 
-    
+
 }
 
 @media (max-width: 600px) {
@@ -79,6 +102,15 @@
 
     .arrow {
         margin-top: 4px;
+    }
+
+    .bannerHeading {
+        font-size: 25px;
+        padding: 100px 10px;
+    }
+
+    .serviceHeading {
+        font-size: 22px;
     }
 
     .services {
@@ -124,5 +156,19 @@
     .border--middle {
         border-top: 1px solid transparent;
         border-bottom: 1px solid var(--primary);
+    }
+
+    .aboutHeaderContent h1,
+    .mainHeading {
+        color: var(--text);
+        font-size: 22px;
+    }
+
+    .guarantee {
+        font-size: 23px;
+    }
+
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
