@@ -7,12 +7,12 @@ const ServiceCard = ({ service }) => {
     return (
         <div className='d-flex flex-column flex-lg-row p-0 serviceCard'>
             <div className='me-lg-3 half-width'>
-                <img className='cardImage img-fluid h-100' src={image} alt="image" />
+                <img className='cardImage img-fluid h-100' src={image} alt="photo" />
             </div>
             <div className='p-lg-2 px-4 py-3 half-width'>
                 <h1 className='fs-4 mt-4'>{name}</h1>
                 <Link className='mt-3 d-inline-block' to={linkForm}> <button className='quoteButton'>Request a Quote <FaArrowRight className='ms-2' /></button></Link> <br />
-                <Link className='text-decoration-none linkText mt-3 pb-3' to={link}>Learn More</Link>
+                <Link className='text-decoration-none linkText mt-3 pb-2' to={link}>Learn More</Link>
             </div>
         </div>
     );
