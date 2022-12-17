@@ -75,7 +75,7 @@ const ClinicUrgentCareForm = () => {
     const [yesNo, setYesNo] = useState("no");
 
     const fullData = {
-        order: "restaurant",
+        order: "clinic",
         totalSquareFootage, frequency, bestTime, waitingRoom,
         covid: yesNo,
         user_data: { firstName, lastName, email, phone },

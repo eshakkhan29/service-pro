@@ -71,7 +71,7 @@ const SchoolCleaningForm = () => {
     const [toiletStalls, setToiletStalls] = useState(0);
     const [buttonGroup, setButtonGroup] = useState("outside");
     const fullData = {
-        order: "office",
+        order: "school",
         totalSquareFootage, heightOfCeilings, students, classrooms, frequency,
         time_of_day: buttonGroup,
         user_data: { firstName, lastName, email, phone },
