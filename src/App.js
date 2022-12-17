@@ -14,6 +14,7 @@ import CommercialForm from "./pages/pagesForm/CommercialForm";
 import Restaurant from "./pages/Restaurant";
 import School from "./pages/School";
 import "./style/global.css";
+import "./style/navbar.css";
 import "./style/servicePage.css";
 import "./style/pageForm.css";
 import "./style/media.css";
