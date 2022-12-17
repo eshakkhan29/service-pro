@@ -1,5 +1,6 @@
 .pageBanner {
     background-color: var(--secondary);
+    padding: 0px 12px;
 }
 
 .pageBanner h1 {

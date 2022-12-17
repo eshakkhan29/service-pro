@@ -10,7 +10,7 @@ const AboutHeader = () => {
                         <p className='text-center'>We make life easier for our clients by providing easy, reliable solutions for all their residential and commercial cleaning needs backed by world-class customer service.</p>
                     </div>
                     <div className='w-100'>
-                        <img className='w-100' src="/images/about-us-head.jpg" alt="photo" />
+                        <img className='w-100' src="/images/about-us-head.jpg" alt="about-header" />
                     </div>
                 </div>
             </div>
