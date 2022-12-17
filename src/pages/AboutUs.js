@@ -13,7 +13,12 @@ const AboutUs = () => {
                 <h1 className='text-center mainHeading'>With many years of experience, rest assured you’re in good hands</h1>
             </div>
             <AboutGoals />
-            <AboutGuarantee/>
+            <AboutGuarantee
+                title={"Our Guarantee"}
+                post={"We provide a 100% satisfaction guarantee. If you’re unhappy with our work we’ll give you a full refund or a re-do. Our business was built on community reputation and that means everything to us."} />
+            <AboutGuarantee
+                title={"Cleaning Disinfecting, Safety."}
+                post={"Discover how ServePro Janitorial Systems can keep your business clean and employees safe."} />
         </div>
     );
 };

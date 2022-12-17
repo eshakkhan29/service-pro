@@ -15,7 +15,7 @@ const Blog = () => {
         <div>
             <PageBanner text={"Blog posts"} />
             <div className='pageBgPatten'>
-                <div className='container p-0'>
+                <div className='container p-lg-0'>
                     <div className='blog py-5'>
                         {blogs.map((blog, i) =>
                             <div key={i} className='bg-white serviceCard'>
