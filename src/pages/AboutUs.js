@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div>
             <PageBanner text={"About us"} />
             <AboutHeader />
-            <div className='container p-0 py-5'>
+            <div className='container p-lg-0 my-5'>
                 <h1 className='text-center mainHeading'>With many years of experience, rest assured you’re in good hands</h1>
             </div>
             <AboutGoals />

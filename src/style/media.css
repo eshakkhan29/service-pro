@@ -17,8 +17,14 @@
     }
 
     .pageBanner h1,
-    .pageTitle h1 {
+    .pageTitle h1{
         font-size: 40px;
+    }
+
+    .aboutHeaderContent h1,
+    .mainHeading {
+        color: var(--text);
+        font-size: 30px;
     }
 
     .formStepOne {
@@ -50,7 +56,7 @@
         object-position: left;
     }
 
-    
+
 }
 
 @media (max-width: 600px) {
@@ -124,5 +130,10 @@
     .border--middle {
         border-top: 1px solid transparent;
         border-bottom: 1px solid var(--primary);
+    }
+    .aboutHeaderContent h1,
+    .mainHeading {
+        color: var(--text);
+        font-size: 22px;
     }
 }
