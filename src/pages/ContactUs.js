@@ -1,5 +1,6 @@
 import React from 'react';
 import PageBanner from '../components/common/PageBanner';
+import { MdMail, MdPhone } from 'react-icons/md';
 
 const ContactUs = () => {
     return (
@@ -9,8 +10,8 @@ const ContactUs = () => {
                 <div className='container px-0 py-5 d-flex align-items-center justify-content-center'>
                     <div className='getInTouch m-auto'>
                         <h1>Get in touch</h1>
-                        <p className='mt-3'>T : +1 604-265-8744</p>
-                        <p>M : service@serveprojanitorial.ca </p>
+                        <p className='mt-3 d-flex align-items-center'><MdPhone className=' me-3' />+1 604-265-8744</p>
+                        <p className=' d-flex align-items-center'><MdMail className=' me-3' />service@serveprojanitorial.ca </p>
                     </div>
                     {/* <div>
                         <iframe

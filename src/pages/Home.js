@@ -23,7 +23,7 @@ const Home = () => {
             <div className='container p-md-0'>
                 <div className='sectionHeader'>
                     <h1 className='serviceHeading'>Looking for the best commercial cleaning services?</h1>
-                    <p className='serviceParagraph'>We Have The Resources, Scope And Experience to maintain your office workspace.</p>
+                    <p className='serviceParagraph'>We have the resources, scope and experience to maintain your office workspace.</p>
                 </div>
                 {/* services */}
                 <div className='services'>

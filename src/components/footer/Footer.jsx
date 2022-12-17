@@ -30,7 +30,7 @@ const Footer = () => {
                         <img className='logo' src="/images/logo/sample-logo.png" alt="logo" />
                         <div className='d-flex align-items-center gap-2 mt-md-5 mt-3'>
                             <MdMail className='text-white' />
-                            <p className='m-0 mail text-white'>info@serveprojanitorial.ca</p>
+                            <p className='m-0 mail text-white'>service@serveprojanitorial.ca</p>
                         </div>
                         <div className='d-flex align-items-center gap-2  mt-3'>
                             <MdPhone className='text-white' />

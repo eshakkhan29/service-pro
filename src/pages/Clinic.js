@@ -22,7 +22,7 @@ const Clinic = () => {
         <div>
             <PageBanner text={"Clinic / Urgent Care Cleaning"} />
             <div className='pageBgPatten'>
-                <div className='pageTitle container p-lg-0 mt-5'>
+                <div className='pageTitle container pt-5'>
                     <h1>Customer First Phylosophy</h1>
                     <p className='m-0'>We are proud to offer our customers top quality cleaning services and superior customer service. Our technicians arrive on-time, fully uniformed, with a smile and can provide you with the cleanest office you've ever had. We are dedicated to providing the highest level of service possible - every time.</p>
                 </div>
