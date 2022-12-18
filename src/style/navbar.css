@@ -135,6 +135,7 @@
     border-top: 2px solid var(--primary);
     border-radius: 7px;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .bookingButton:hover .dropdown-form {
