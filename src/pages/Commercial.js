@@ -28,7 +28,7 @@ const Commercial = () => {
                     image={"/images/services/service1.jpg"}
                     features={features}
                 />
-                <div className='text-center pb-5 pt-4'>
+                <div className='text-center container px-lg-0 pb-5 pt-4'>
                     <h2 className='pageBottomText mb-4'>Click <span>Request a Quote</span> to set up a Disinfectant Cleaning</h2>
                     <Link to={'/commercial-form'}><button className='quoteButton'>Request A Quote</button></Link>
                 </div>

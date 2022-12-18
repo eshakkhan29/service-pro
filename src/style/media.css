@@ -35,7 +35,13 @@
         color: var(--text);
         font-size: 30px;
     }
-
+    .formPageHeader h1 {
+        font-size: 30px;
+    }
+    
+    .formPageHeader h2 {
+        font-size: 25px;
+    }
     .formStepOne {
         width: 95%;
     }
@@ -133,10 +139,30 @@
     .pageBanner h1 {
         padding: 40px 12px;
     }
-
+    .formPageHeader h1 {
+        font-size: 25px;
+    }
+    
+    .formPageHeader h2 {
+        font-size: 22px;
+    }
+    .formPageHeader p{
+        font-size: 16px;
+    }
+    .formStepOne h2{
+        font-size: 20px;
+    }
     .inputForm {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .inputForm  input {
+        width: 100%;
+    }
+    .inputForm select{
+        width: 100%;
+        text-align: center;
     }
 
     .serviceSpace {
@@ -211,8 +237,8 @@
 }
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .borderLg {
         border: 1px solid var(--primary);
     }
- }
+}
