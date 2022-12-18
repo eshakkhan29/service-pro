@@ -14,7 +14,8 @@ const Home = () => {
     return (
         <>
             {/* banner */}
-            <div className='banner h-100 border-top'>
+            <div className='banner h-100'>
+                <hr className='mt-0' style={{ color: "#606060" }} />
                 <div>
                     <h1 className='bannerHeading'>Commercial Cleaning and Facility Management Services</h1>
                 </div>

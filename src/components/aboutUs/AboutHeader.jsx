@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutHeader = () => {
     return (
-        <div className='aboutHeader border-bottom'>
+        <div className=''>
             <div className='container p-lg-0'>
                 <div className='d-flex flex-column flex-lg-row align-items-center gap-4 py-5'>
                     <div className='aboutHeaderContent w-100'>

@@ -104,7 +104,7 @@ const GymCleaningForm = () => {
                     {/* page heading */}
                     <PageFormHeader title={"Gym Cleaning"} />
                     {/* page form full */}
-                    <div className='formStepOne py-md-5 py-4 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+                    <div className='formStepOne py-md-5 py-4 m-auto mt-3 px-3 rounded-3'>
 
                         {/* Form step one */}
                         <h2>STEP 1: Tell us about your gym</h2>
@@ -171,15 +171,15 @@ const GymCleaningForm = () => {
                                     className={`yes-no-btn ${yesNo === "no" ? "button--active" : ""}`}>No</button>
                             </div>
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
                         <div className='inputForm py-3'>
-                            <h3>What equipment would you like cleaned?</h3>
+                            <h3 className='text-white'>What equipment would you like cleaned?</h3>
                             <p className='stepTowP'>Please list the types of machines and weights and how many of each you'd like cleaned (dumbbells, barbells, treadmills, bicycles, etc)</p>
                             <textarea
                                 onChange={(e) => setEquipment(e.target.value)}
-                                className='w-100' name="" id="" cols="30" rows="7"></textarea>
+                                className='w-100' placeholder='type your equipment' name="" id="" cols="30" rows="7"></textarea>
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
                         {/* Form step tow */}
                         <h2>STEP 2: Additional Spaces to Clean</h2>
 
@@ -234,7 +234,7 @@ const GymCleaningForm = () => {
                                 setFun={setCafeterias}
                                 set={cafeterias} />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step three */}
                         <h2>STEP 3: Type of Flooring</h2>
@@ -295,7 +295,7 @@ const GymCleaningForm = () => {
                                 onChange={(e) => setFloorSpace(e.target.value)}
                                 className='w-100' type="text" placeholder='Please add any other information you feel we should know about and is pertinent or missing in the above.' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step four customer info */}
                         <h2>STEP 4: Let us know who we'll be contacting</h2>
@@ -316,7 +316,7 @@ const GymCleaningForm = () => {
                                 onChange={(e) => setPhone(e.target.value)}
                                 className='w-100' type="number" placeholder='Phone number' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step five customer address */}
                         <h2>STEP 5: Where is the location of the restaurant?</h2>
@@ -344,7 +344,7 @@ const GymCleaningForm = () => {
                                 onChange={(e) => setPostalCode(e.target.value)}
                                 className='w-100' type="text" placeholder='Postal Code' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
                         {/* Form submit button */}
                         <div className='text-center pt-3'>
                             <button

@@ -18,12 +18,12 @@ const Blog = () => {
                 <div className='container p-lg-0'>
                     <div className='blog py-5'>
                         {blogs.map((blog, i) =>
-                            <div key={i} className='bg-white serviceCard'>
+                            <div key={i} className='serviceCard'>
                                 <div>
                                     <img className='overflow-hidden blogImage' src={blog.image} alt={blog.image} />
                                 </div>
                                 <div className='p-3'>
-                                    <h1 className='fs-3'>{blog.title}</h1>
+                                    <h1 className='fs-3 text-white'>{blog.title}</h1>
                                     <p>{blog.blog.length < 100 ? blog.blog : blog.blog.slice(0, 120) + "..."}</p>
                                     <Link className='seeMore' to={blog.link}>See more</Link>
                                 </div>

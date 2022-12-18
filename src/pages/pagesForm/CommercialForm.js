@@ -100,7 +100,7 @@ const CommercialForm = () => {
                     {/* page heading */}
                     <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
                     {/* page form full */}
-                    <div className='formStepOne py-md-5 py-4 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+                    <div className='formStepOne py-md-5 py-4 m-auto mt-3 px-3 rounded-3'>
 
                         {/* Form step one */}
                         <h2>STEP 1: Tell us about your commercial space.</h2>
@@ -172,7 +172,7 @@ const CommercialForm = () => {
                                     className={`yes-no-btn ${yesNo === "no" ? "button--active" : ""}`}>No</button>
                             </div>
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
                         {/* Form step tow */}
                         <h2>STEP 2: Select Space types.</h2>
                         <p className='stepTowP'>Select the quantity for each space type in the area you wish cleaned. This will help ensure we provide you the most accurate estimate possible in just a few minutes.</p>
@@ -210,7 +210,7 @@ const CommercialForm = () => {
                                 setFun={setLounging}
                                 set={lounging} />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step three */}
                         <h2>STEP 3: Type of Flooring</h2>
@@ -261,7 +261,7 @@ const CommercialForm = () => {
                                 onChange={(e) => setFloorSpace(e.target.value)}
                                 className='w-100' type="text" placeholder='Please add any other information you feel we should know about and is pertinent or missing in the above.' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step four customer info */}
                         <h2>STEP 4: Let us know who we'll be contacting</h2>
@@ -282,7 +282,7 @@ const CommercialForm = () => {
                                 onChange={(e) => setPhone(e.target.value)}
                                 className='w-100' type="number" placeholder='Phone number' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
 
                         {/* Form step five customer address */}
                         <h2>STEP 5: Location of the commercial space</h2>
@@ -310,7 +310,7 @@ const CommercialForm = () => {
                                 onChange={(e) => setPostalCode(e.target.value)}
                                 className='w-100' type="text" placeholder='Postal Code' />
                         </div>
-                        <hr />
+                        <hr  style={{ color: "#a1a1a1" }} />
                         {/* Form submit button */}
                         <div className='text-center pt-3'>
                             <button

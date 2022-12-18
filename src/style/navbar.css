@@ -1,10 +1,10 @@
 .mailIcon,
 .phoneIcon {
-    color: var(--primary);
+    color: white;
 }
 
 .icon {
-    color: var(--primary);
+    color: white;
     transition: all 0.3s ease;
 }
 
@@ -14,7 +14,7 @@
 
 .mail,
 .phone .textColor {
-    color: #17182e;
+    color: white;
 }
 
 .logo {
@@ -28,7 +28,7 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary);
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -59,7 +59,7 @@
     position: absolute;
     top: 33px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--bg2);
     border-top: 2px solid var(--primary);
     border-radius: 7px;
     transition: all 0.3s ease;
@@ -81,7 +81,7 @@
     position: absolute;
     top: 33px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--bg2);
     border-top: 2px solid var(--primary);
     border-radius: 7px;
     transition: all 0.3s ease;
@@ -126,7 +126,7 @@
     top: 100%;
     right: 0;
     padding: 20px;
-    background-color: white;
+    background-color: var(--bg2);
     border-top: 2px solid var(--primary);
     border-radius: 7px;
     transition: all 0.3s ease;
