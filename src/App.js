@@ -23,9 +23,11 @@ import RestaurantForm from "./pages/pagesForm/RestaurantForm";
 import GymCleaningForm from "./pages/pagesForm/GymCleaningForm";
 import ClinicUrgentCareForm from "./pages/pagesForm/ClinicUrgentCareForm";
 import SchoolCleaningForm from "./pages/pagesForm/SchoolCleaningForm";
+import { ScrollTop } from "./components/common/ScrollTop";
 function App() {
   return (
     <div>
+      <ScrollTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
