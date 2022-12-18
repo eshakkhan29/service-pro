@@ -105,7 +105,7 @@ const RestaurantForm = () => {
 
             {/* full page */}
             <div className='pageBgPatten'>
-                <div className='container p-0 py-5'>
+                <div className='container px-lg-0 py-5'>
                     {/* page heading */}
                     <PageFormHeader title={"Restaurant & Cafe Cleaning"} />
                     {/* page form full */}
