@@ -32,7 +32,7 @@ const Clinic = () => {
                     image={"/images/services/clinic.jpg"}
                     features={features}
                 />
-                <div className='text-center pb-5 pt-4'>
+                <div className='text-center container px-lg-0 pb-5 pt-4'>
                     <h2 className='pageBottomText mb-4'>Click <span>Request a Quote</span> to set up a Clinic / Urgent Care Cleaning</h2>
                     <Link to={'/clinic-form'}><button className='quoteButton'>Request A Quote</button></Link>
                 </div>

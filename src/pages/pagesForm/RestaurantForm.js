@@ -123,7 +123,7 @@ const RestaurantForm = () => {
                             <p className='m-0'>Height of Ceilings</p>
                             <input
                                 onChange={(e) => setHeightOfCeilings(e.target.value)}
-                                className='w-50' type="text" placeholder='Average height of ceiling' />
+                                type="text" placeholder='Average height of ceiling' />
                         </div>
                         <div className='inputForm py-3'>
                             <p className='mb-3'>Total Chairs and Tables (including standing tables and bar stools)</p>
@@ -173,7 +173,7 @@ const RestaurantForm = () => {
                             <p className='m-0'>What time of day would you like the space cleaned?</p>
                             <input
                                 onChange={(e) => setBestTime(e.target.value)}
-                                className='w-50' type="text" placeholder='Best time to clean' />
+                                type="text" placeholder='Best time to clean' />
                         </div>
                         <hr />
                         {/* Form step tow */}
@@ -297,7 +297,7 @@ const RestaurantForm = () => {
                         {/* Form step four customer info */}
                         <h2>STEP 4: Let us know who we'll be contacting</h2>
                         <p className='stepTowP'>You will instantly receive an email summarizing the information entered in this Quote Request. In addition, we will call you within the next 10 minutes to provide you a quote. Thanks you & talk real soon!</p>
-                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 py-3'>
                             <input
                                 onChange={(e) => setFirstName(e.target.value)}
                                 className='w-100' type="text" placeholder='First name' />
@@ -305,7 +305,7 @@ const RestaurantForm = () => {
                                 onChange={(e) => setLastName(e.target.value)}
                                 className='w-100' type="text" placeholder='Last name' />
                         </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-2 pb-3'>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 py-3'>
                             <input
                                 onChange={(e) => setEmail(e.target.value)}
                                 className='w-100' type="email" placeholder='Email' />
@@ -317,7 +317,7 @@ const RestaurantForm = () => {
 
                         {/* Form step five customer address */}
                         <h2>STEP 5: Where is the location of the restaurant?</h2>
-                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-3'>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 py-3'>
                             <input
                                 onChange={(e) => setAddress(e.target.value)}
                                 className='w-100' type="text" placeholder='Street Address' />
@@ -325,12 +325,13 @@ const RestaurantForm = () => {
                                 onChange={(e) => setUnit(e.target.value)}
                                 className='w-100' type="text" placeholder='Unit/Apt/Suite #' />
                         </div>
-                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 pt-2 pb-3'>
+                        <div className='inputForm d-flex align-items-center justify-content-between gap-4 py-3'>
                             <input
                                 onChange={(e) => setCity(e.target.value)}
                                 className='w-100' type="text" placeholder='City' />
                             <select
                                 onChange={(e) => setProvince(e.target.value)}
+                                className="w-100"
                                 name="" id="">
                                 {provinces.map((province, i) =>
                                     <option key={i} value={province.province}>{province.province}</option>
@@ -342,7 +343,7 @@ const RestaurantForm = () => {
                         </div>
                         <hr />
                         {/* Form submit button */}
-                        <div className='text-center pt-2 pb-4'>
+                        <div className='text-center pt-3 pb-4'>
                             <button
                                 onClick={handelSubmit}
                                 className='quoteButton'>Request a quote </button>
