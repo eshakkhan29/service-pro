@@ -25,7 +25,7 @@ const Footer = () => {
     return (
         <div className='footerMain'>
             <div className='container p-md-0'>
-                <div className='d-flex flex-column flex-md-row justify-content-between '>
+                <div className='d-flex flex-column flex-md-row justify-content-between gap-md-3'>
                     <div className='fs-5 text-white'>
                         <img className='logo' src="/images/logo/sample-logo.png" alt="logo" />
                         <div className='d-flex align-items-center gap-2 mt-md-5 mt-3'>

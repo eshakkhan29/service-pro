@@ -95,9 +95,9 @@ const ClinicUrgentCareForm = () => {
             <div className='pageBgPatten'>
                 <div className='container p-0 py-5'>
                     {/* page heading */}
-                    <PageFormHeader title={"﻿Clinic/Urgent Care Cleaning"} />
+                    <PageFormHeader title={"Clinic/Urgent Care Cleaning"} />
                     {/* page form full */}
-                    <div className='formStepOne py-2 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
+                    <div className='formStepOne py-md-5 py-4 m-auto mt-3 bg-white px-3 rounded-3 shadow-sm'>
 
                         {/* Form step one */}
                         <h2>STEP 1: Tell us about your clinic/urgent care facility</h2>
@@ -301,7 +301,7 @@ const ClinicUrgentCareForm = () => {
                         </div>
                         <hr />
                         {/* Form submit button */}
-                        <div className='text-center pt-3 pb-4'>
+                        <div className='text-center pt-3'>
                             <button
                                 onClick={handelSubmit}
                                 className='quoteButton'>Request a quote </button>
