@@ -116,7 +116,7 @@
     }
 
     .navbar-collapse {
-        background: #f7f7f7;
+        background: var(--bg1);
     }
 
     .custom-nav a,

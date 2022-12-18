@@ -13,7 +13,7 @@ const services = [
 ]
 const MainNav = () => {
     return (
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" variant="dark">
             <Link to="/">
                 <img className='logo' src="/images/logo/sample-logo.png" alt="logo" />
             </Link>
