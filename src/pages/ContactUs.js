@@ -25,7 +25,7 @@ const ContactUs = () => {
                     <div className='w-100'>
                         <form
                             onSubmit={handelFormSubmit}
-                            className='d-flex flex-column gap-3 bg-white p-4 rounded-3 shadow-sm'>
+                            className='d-flex flex-column contact-bg gap-3 p-4 rounded-3'>
                             <div className='inputForm d-flex flex-column'>
                                 <label className='mb-2' htmlFor="name">Your Name</label>
                                 <input id='name' required type="text" name='fillName' placeholder='Full name' />

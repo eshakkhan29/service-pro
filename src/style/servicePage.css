@@ -1,5 +1,5 @@
 .pageBanner {
-    background-color: var(--secondary);
+    background-color: var(--bg);
     padding: 0px 12px;
 }
 
@@ -10,9 +10,9 @@
     padding: 55px 0px;
 }
 
-.pageBgPatten {
+/* .pageBgPatten {
     background-image: url('/public/images/bg-body.jpg');
-}
+} */
 
 .pageTitle h1 {
     font-size: 45px;

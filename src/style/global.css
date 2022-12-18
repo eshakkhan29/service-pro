@@ -9,25 +9,26 @@
 
 body {
   font-family: 'Work Sans', sans-serif !important;
+  background-color: #333133 !important;
 }
 
 
 /* color declaration */
 :root {
-  --primary: #eb1c22;
-  --secondary: #ff771a;
-  --text: #17182e;
+  --primary: #d32b31;
+  --secondary: #30a61d;
+  --text: #ffffff;
   --border: #aeaeae;
-  --bg: #aeaeae;
+  --bg: #d32b31;
+  --bg2: #333133;
+  --shadow1: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-
+p {
+  color: #ffffff !important;
+}
 
 /* About us style start */
-.aboutHeader {
-  background-color: #F7F7F7;
-}
-
 .aboutHeaderContent h1,
 .mainHeading {
   color: var(--text);
@@ -48,8 +49,11 @@ body {
 }
 
 .aboutBottom {
-  background-color: #F7F7F7;
   padding: 30px 0px;
+}
+
+.sub-heading {
+  color: white;
 }
 
 .guarantee {
@@ -59,7 +63,7 @@ body {
 }
 
 .guaranteeParagraphs {
-  background-color: white;
+  background-color: #606060;
   padding: 30px;
   margin: 20px 0px 0px;
 }
@@ -68,6 +72,10 @@ body {
 
 
 /* Contact us style start */
+.contact-bg {
+  background-color: #606060;
+}
+
 .getInTouch h1 {
   font-size: 35px;
   color: var(--text);
@@ -77,7 +85,12 @@ body {
   font-size: 18px;
   color: var(--text);
 }
-.contactButton{
+
+.inputForm label {
+  color: white;
+}
+
+.contactButton {
   border: none;
   outline: none;
   background-color: var(--primary);
@@ -86,7 +99,8 @@ body {
   border-radius: 7px;
   transition: all 0.3s ease;
 }
-.contactButton:hover{
+
+.contactButton:hover {
   background-color: var(--secondary);
 }
 
@@ -105,23 +119,30 @@ body {
   border-radius: 7px 7px 0px 0px;
 }
 
-.seeMore {
-  text-decoration: none;
-  color: var(--secondary);
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.seeMore:hover {
-  color: var(--primary);
-}
 
 /* Blogs style end */
 
 /* FAQ css  accordion start*/
+.accordion{
+  box-shadow: var(--shadow1);
+}
+.accordion-collapse{
+  background-color: #a1a1a1 !important;
+  color: white !important;
+}
+.accordion-button{
+  background-color: #a1a1a1 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
 .accordion-button:not(.collapsed) {
   color: var(--text) !important;
-  background-color: #e9e9e9 !important;
+  background-color: var(--secondary) !important;
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
 }
 
 /* FAQ css  accordion end*/

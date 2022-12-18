@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { MdMail, MdPhone } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import '../../style/footer.css'
@@ -23,7 +24,7 @@ const Footer = () => {
         { name: "School Cleaning", link: "/school" },
     ]
     return (
-        <div className='footerMain'>
+        <footer className='footerMain'>
             <div className='container p-md-0'>
                 <div className='d-flex flex-column flex-md-row justify-content-between gap-md-3'>
                     <div className='fs-5 text-white'>
@@ -39,7 +40,7 @@ const Footer = () => {
                         <div className='d-flex align-items-center gap-4 mt-3'>
                             <Link className='text-white' to="#"><FaFacebook /></Link>
                             <Link className='text-white' to="#"><FaLinkedin /></Link>
-                            <Link className='text-white' to="#"><FaTwitter /></Link>
+                            <Link className='text-white' to="#"><AiFillTwitterCircle /></Link>
                             <Link className='text-white' to="#"><FaInstagram /></Link>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 

@@ -9,10 +9,12 @@ const AboutUs = () => {
         <div>
             <PageBanner text={"About us"} />
             <AboutHeader />
+            <hr style={{color:"#606060"}}/>
             <div className='container p-lg-0 my-5'>
                 <h1 className='text-center mainHeading'>With many years of experience, rest assured you’re in good hands</h1>
             </div>
             <AboutGoals />
+            <hr style={{color:"#606060"}}/>
             <AboutGuarantee
                 title={"Our Guarantee"}
                 post={"We provide a 100% satisfaction guarantee. If you’re unhappy with our work we’ll give you a full refund or a re-do. Our business was built on community reputation and that means everything to us."} />

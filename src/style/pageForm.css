@@ -3,28 +3,29 @@
 }
 
 .formPageHeader h1 {
-    color: #292b2c;
+    color: white;
     font-size: 35px;
 }
 
 .formPageHeader h2 {
-    color: #65686a;
+    color: #b7b7b7;
     font-size: 30px;
 }
 
 .formPageHeader p,
-.inputForm p,
-.inputForm label {
+.inputForm p {
     color: #4c4e50;
     font-size: 20px;
 }
 
 .formStepOne {
     width: 75%;
+    background-color: #606060;
+    box-shadow: var(--shadow1);
 }
 
 .formStepOne h2 {
-    color: #65686a;
+    color: white;
     font-size: 24px;
     font-weight: 700;
 }
@@ -53,7 +54,7 @@
     border: 0;
     padding: 10px 20px;
     border: 1px solid var(--primary);
-    background: transparent;
+    background: white;
     transition: linear 0.2s all;
 }
 
@@ -106,18 +107,18 @@
 }
 
 .Space-types-card {
-    background-color: #E2E5EA;
+    background-color: #a1a1a1;
     padding: 20px;
     border-radius: 5px;
 }
 
 .Space-types-card h3 {
     font-size: 18px;
-    color: #576176;
+    color: white;
 }
 
 .toolTip {
-    color: #576176;
+    color: white;
 }
 
 

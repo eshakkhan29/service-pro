@@ -1,5 +1,5 @@
 .banner {
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.65)), url("/public/images/banner/banner.jpg");
+    background-image: linear-gradient(#333133dc, #333133ac), url("/public/images/banner/banner.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,6 +7,7 @@
 
 .bannerHeading {
     font-size: 50px;
+    color: white;
     text-align: center;
     padding: 250px 0px;
 }
@@ -17,7 +18,7 @@
 
 .serviceHeading {
     font-size: 35px;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: 500;
 }
@@ -38,8 +39,20 @@
 }
 
 .serviceCard {
-    box-shadow: 0 10px 20px 0 #0000001a;
+    background-color: #a1a1a1;
+    box-shadow: var(--shadow1);
     border-radius: 7px;
+}
+
+.seeMore {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.seeMore:hover {
+  color: var(--secondary);
 }
 
 .cardImage {
