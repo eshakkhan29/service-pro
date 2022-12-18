@@ -25,7 +25,7 @@ const Footer = () => {
     return (
         <div className='footerMain'>
             <div className='container p-md-0'>
-                <div className='d-flex flex-column justify-content-between flex-md-row'>
+                <div className='d-flex flex-column flex-md-row justify-content-between '>
                     <div className='fs-5 text-white'>
                         <img className='logo' src="/images/logo/sample-logo.png" alt="logo" />
                         <div className='d-flex align-items-center gap-2 mt-md-5 mt-3'>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                     <div className='text-white mt-md-3 mt-5'>
                         <h1 className='footerMenuTag'>Sitemap</h1>
-                        <div className='d-flex flex-column  gap-md-2  mt-3'>
+                        <div className='d-flex flex-column gap-2 mt-3'>
                             {menus.map((menu, i) => <Link key={i} className='footerMenu ' to={menu.link}>{menu.name}</Link>)}
                         </div>
                     </div>
