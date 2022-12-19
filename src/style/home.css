@@ -56,8 +56,15 @@
 }
 
 .cardImage {
-    width: 350px;
+    /* width: 350px; */
     border-radius: 7px 0px 0px 7px;
+}
+
+.serviceCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 245px;
 }
 
 .quoteButton {

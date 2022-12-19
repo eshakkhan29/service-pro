@@ -2,29 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageBanner from '../components/common/PageBanner';
 import ServicePageContent from '../components/common/ServicePageContent';
-
+const features = [
+    { feature: "Proven disinfection method to kill viruses including COVID-19" },
+    { feature: "Kills 99.99% of viruses, bacteria, fungi and other pathogens" },
+    { feature: "Trained experts wear full Personal Protective Equipment (PPE)" },
+    { feature: "Disinfection by thorough hospital grade spray and wipe procedure" },
+    { feature: "Disinfects laptops, keyboards, telephones, and other high-touch items" },
+    { feature: "Immediate post-disinfection reoccupation" }
+]
 const Commercial = () => {
-    const features = [
-        { feature: "Vacuum loose debris from all floors and carpets" },
-        { feature: "Disinfectant mopping of hard surface floors" },
-        { feature: "Disinfect all dining area hard surfaces" },
-        { feature: "Spray clean all dining area glass surfaces" },
-        { feature: "Sanitize all kitchen surfaces and cutting boards" },
-        { feature: "Empty all food waste trash and recyclables" },
-        { feature: "Clean fryers and brush and scour grills" },
-        { feature: "Clean grease traps" },
-        { feature: "Sanitize meat and cheese slicers" },
-        { feature: "Sanitize sinks, faucets, and beverage dispensers" },
-        { feature: "Clean and thoroughly sanitize washrooms" },
-        { feature: "Empty washroom trash bins and replace liners" }
-    ]
+
     return (
         <div>
             <PageBanner text={"Commercial Disinfectant Cleaning"} />
             <div className='pageBgPatten'>
                 <ServicePageContent
-                    title={"Disinfection Services"}
-                    dialog={"Be it preventative disinfecting, or during a reported illness such as a positive COVID-19 case, we're readily available to eliminate harmful germs. Our cleaning technicians have the knowhow and equipment necessary to provide specialized disinfection services - including advanced Electro Static Spray disinfecting services."}
+                    title={"Commercial Disinfectant Cleaning"}
+                    dialog={"Our commercial disinfectant cleaning is a proven and certified disinfection method to combat against bacteria and viruses including COVID-19. Your commercial space will be made safe for its occupants using the same validated methods and stringent standards as those practiced in many hospitals, clinics, dental offices, and patient care facilities. Use our Live Pricing & Real-Time Booking Pages to customize your commercial disinfectant cleaning to your unique commercial disinfectant cleaning needs, and instantly view personalized pricing on our website. Book online or call us and you will also receive an instant text and/or email confirmation. Save when you book recurring cleanings!"}
                     image={"/images/services/service1.jpg"}
                     features={features}
                 />

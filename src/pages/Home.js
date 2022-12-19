@@ -1,9 +1,7 @@
 import React from 'react';
 import ServiceCard from '../components/home/ServiceCard';
 import '../style/home.css'
-
-const Home = () => {
-    const services = [
+ const services = [
         { name: "Commercial Disinfectant Cleaning", image: "/images/services/service1.jpg", linkForm: "/commercial-form", link: "/commercial" },
         { name: "Office Cleaning", image: "/images/services/office.jpg", linkForm: "/office-form", link: "/office" },
         { name: "Restaurant & Cafe Cleaning", image: "/images/services/restaurant.jpg", linkForm: "/restaurant-form", link: "/restaurant" },
@@ -11,6 +9,8 @@ const Home = () => {
         { name: "Clinic / Urgent Care Cleaning", image: "/images/services/clinic.jpg", linkForm: "/clinic-form", link: "/clinic" },
         { name: "School Cleaning", image: "/images/services/school.jpg", linkForm: "/school-form", link: "/school" },
     ]
+const Home = () => {
+   
     return (
         <>
             {/* banner */}

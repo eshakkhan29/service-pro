@@ -233,6 +233,9 @@
         width: 347px;
         padding: 0 20px !important;
     }
+    .serviceCardContent {
+        min-height: 0px !important;
+    }
 }
 
 
