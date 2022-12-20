@@ -17,7 +17,7 @@ const Home = () => {
             <div className='banner'>
                 <hr className='mt-0' style={{ color: "#606060" }} />
                 <div className='bannerHeading'>
-                    <h1>Commercial Cleaning and Facility Management Services</h1>
+                    <h1>Commercial Cleaning and Facility Maintenance Services</h1>
                 </div>
             </div>
             {/* services dialog */}
