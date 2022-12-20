@@ -2,29 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageBanner from '../components/common/PageBanner';
 import ServicePageContent from '../components/common/ServicePageContent';
-
+const features = [
+    { feature: "Vacuum loose debris from all floors and carpets" },
+    { feature: "Disinfectant mopping of hard surface floors" },
+    { feature: "Remove dust from desks and furniture" },
+    { feature: "Wipe down hard surfaces with mild disinfectant" },
+    { feature: "Empty waste bins and replace liners" },
+    { feature: "Spray clean all glass surfaces and mirrors" },
+    { feature: "Wipe down light switches, door handles, and fixtures" },
+    { feature: "Clean and sanitize breakrooms and washrooms" },
+    { feature: "Use spray disinfectant on toilets, doors, sinks, and appliances" },
+    { feature: "Refill soap dispensers and paper towel holders" },
+    { feature: "Load and run breakroom dishwasher if needed" }
+]
 const OfficeCleaning = () => {
-    const features = [
-        { feature: "Vacuum loose debris from all floors and carpets" },
-        { feature: "Disinfectant mopping of hard surface floors" },
-        { feature: "Disinfect all dining area hard surfaces" },
-        { feature: "Spray clean all dining area glass surfaces" },
-        { feature: "Sanitize all kitchen surfaces and cutting boards" },
-        { feature: "Empty all food waste trash and recyclables" },
-        { feature: "Clean fryers and brush and scour grills" },
-        { feature: "Clean grease traps" },
-        { feature: "Sanitize meat and cheese slicers" },
-        { feature: "Sanitize sinks, faucets, and beverage dispensers" },
-        { feature: "Clean and thoroughly sanitize washrooms" },
-        { feature: "Empty washroom trash bins and replace liners" }
-    ]
+
     return (
         <div>
             <PageBanner text={"Office Cleaning"} />
             <div className='pageBgPatten'>
                 <ServicePageContent
                     title={"Office Cleaning"}
-                    dialog={"Let ServePro take care of the details and we will ensure your space if cleaned meticulously to ensure a healthy workspace."}
+                    dialog={"A neat, tidy office is the hallmark of a professional business, allowing employees to focus on their work. A poorly maintained office is a health hazard which can harm productivity and make a poor impression on visitors. Our professional office cleaners will keep your office in tip top shape by performing a thorough cleaning and tidy up operation at a price you can afford. Our Live Pricing & Real-Time Booking Pages provide customizable options, instant pricing, and savings when you book recurring visits."}
                     image={"/images/services/office.jpg"}
                     features={features}
                 />
