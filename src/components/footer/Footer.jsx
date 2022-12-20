@@ -44,13 +44,13 @@ const Footer = () => {
                             <Link className='text-white' to="#"><FaInstagram /></Link>
                         </div>
                     </div>
-                    <div className='text-white mt-md-3 mt-5'>
+                    <div className='text-white mt-lg-1 mt-md-3 mt-5'>
                         <h1 className='footerMenuTag'>Sitemap</h1>
                         <div className='d-flex flex-column gap-2 mt-3'>
                             {menus.map((menu, i) => <Link key={i} className='footerMenu ' to={menu.link}>{menu.name}</Link>)}
                         </div>
                     </div>
-                    <div className='text-white mt-4 mt-md-3'>
+                    <div className='text-white mt-lg-1 mt-4 mt-md-3'>
                         <h1 className='footerMenuTag'>Commercial</h1>
                         <div className='d-flex flex-column gap-2 mt-3'>
                             {services.map((service, i) => <Link key={i} className='footerMenu' to={service.link}>{service.name}</Link>)}
