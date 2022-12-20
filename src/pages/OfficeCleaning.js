@@ -24,7 +24,7 @@ const OfficeCleaning = () => {
                 <ServicePageContent
                     title={"Office Cleaning"}
                     dialog={"A neat, tidy office is the hallmark of a professional business, allowing employees to focus on their work. A poorly maintained office is a health hazard which can harm productivity and make a poor impression on visitors. Our professional office cleaners will keep your office in tip top shape by performing a thorough cleaning and tidy up operation at a price you can afford. Our Live Pricing & Real-Time Booking Pages provide customizable options, instant pricing, and savings when you book recurring visits."}
-                    image={"/images/services/office.jpg"}
+                    image={"/images/services/office.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>

@@ -1,6 +1,7 @@
-.headerMain{
+.headerMain {
     background-color: #a1a1a1;
 }
+
 .banner {
     background-image: linear-gradient(#333133dc, #333133ac), url("/public/images/banner/banner.jpg");
     background-position: center center;
@@ -49,10 +50,10 @@
 }
 
 .serviceCard {
-    background-color: #a1a1a1;
     box-shadow: var(--shadow1);
     border-radius: 7px;
 }
+
 
 .seeMore {
     text-decoration: none;
@@ -66,14 +67,17 @@
 }
 
 .cardImage {
-    /* width: 350px; */
+    max-width: 100%;
+    min-height: 100%;
     border-radius: 7px 0px 0px 7px;
 }
 
 .serviceCardContent {
+    background-color: #a1a1a1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 0px 7px 7px 0px;
     min-height: 245px;
 }
 

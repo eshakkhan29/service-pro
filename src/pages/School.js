@@ -25,7 +25,7 @@ const School = () => {
                 <ServicePageContent
                     title={"School Cleaning"}
                     dialog={"Parents want to know their children are spending their days in a safe, healthy learning environment. And if not properly maintained, a school can be an ideal breeding ground for and germs including SARS-CoV-2, the virus that causes COVID-19. A key part of a school’s responsibility is to take the necessary steps to ensure that standards of cleanliness meet and surpass all requirements and local legislation. As seasoned school cleaning professionals, our mission is to provide you with the peace of mind that comes from knowing your school is being cleaned and disinfected to the highest standards. Our Live & Real-Time Booking Pages provide instant pricing and savings when you book recurring visits."}
-                    image={"/images/services/school.jpg"}
+                    image={"/images/services/school.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>
