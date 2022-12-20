@@ -9,7 +9,7 @@
 }
 
 .icon:hover {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .mail,
@@ -34,11 +34,11 @@
 }
 
 .menuLinks .menuLink:hover {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .menuLinks a:hover {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .arrow {

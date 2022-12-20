@@ -7,7 +7,7 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 
 const Header = () => {
     return (
-        <header>
+        <header className='headerMain'>
             <div className='container p-0'>
                 {/* top */}
                 <div className='d-none d-md-block'>
