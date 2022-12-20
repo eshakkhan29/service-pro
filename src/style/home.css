@@ -1,3 +1,6 @@
+.headerMain{
+    background-color: #a1a1a1;
+}
 .banner {
     background-image: linear-gradient(#333133dc, #333133ac), url("/public/images/banner/banner.jpg");
     background-position: center center;
