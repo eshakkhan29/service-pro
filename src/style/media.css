@@ -1,5 +1,5 @@
 @media (max-width: 991px) {
-    .bannerHeading h1{
+    .bannerHeading h1 {
         font-size: 40px;
     }
 
@@ -15,6 +15,7 @@
     .cardImage {
         border-radius: 7px 7px 0px 0px;
     }
+
     .serviceCardContent {
         border-radius: 0px 0px 7px 7px;
     }
@@ -37,13 +38,15 @@
         color: var(--text);
         font-size: 30px;
     }
+
     .formPageHeader h1 {
         font-size: 30px;
     }
-    
+
     .formPageHeader h2 {
         font-size: 25px;
     }
+
     .formStepOne {
         width: 95%;
     }
@@ -69,6 +72,7 @@
     .blog {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .menuLinks .menuLink,
     .menuLinks a {
 
@@ -135,10 +139,12 @@
     .arrow {
         margin-top: 4px;
     }
-.banner{
-    height: 70vh;
-}
-    .bannerHeading h1{
+
+    .banner {
+        height: 70vh;
+    }
+
+    .bannerHeading h1 {
         font-size: 27px;
         padding: 0px 12px;
     }
@@ -167,28 +173,33 @@
     .pageBanner h1 {
         padding: 40px 12px;
     }
+
     .formPageHeader h1 {
         font-size: 25px;
     }
-    
+
     .formPageHeader h2 {
         font-size: 22px;
     }
-    .formPageHeader p{
+
+    .formPageHeader p {
         font-size: 16px;
     }
-    .formStepOne h2{
+
+    .formStepOne h2 {
         font-size: 20px;
     }
+
     .inputForm {
         flex-direction: column;
         gap: 15px;
     }
 
-    .inputForm  input {
+    .inputForm input {
         width: 100%;
     }
-    .inputForm select{
+
+    .inputForm select {
         width: 100%;
         text-align: center;
     }
@@ -233,13 +244,20 @@
     .blog {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .dropdownServices {
         left: -125px;
         width: 347px;
         padding: 0 20px !important;
     }
+
     .serviceCardContent {
         min-height: 0px !important;
+    }
+
+    .logo {
+        width: 245px;
+        height: 60px;
     }
 }
 
