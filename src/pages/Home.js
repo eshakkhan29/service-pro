@@ -2,12 +2,12 @@ import React from 'react';
 import ServiceCard from '../components/home/ServiceCard';
 import '../style/home.css'
 const services = [
-    { name: "Commercial Disinfectant Cleaning", image: "/images/services/service1.jpg", linkForm: "/commercial-form", link: "/commercial" },
-    { name: "Office Cleaning", image: "/images/services/office.jpg", linkForm: "/office-form", link: "/office" },
-    { name: "Restaurant & Cafe Cleaning", image: "/images/services/restaurant.jpg", linkForm: "/restaurant-form", link: "/restaurant" },
-    { name: "Gym Cleaning", image: "/images/services/gym.jpg", linkForm: "/gym-form", link: "/gym" },
-    { name: "Clinic / Urgent Care Cleaning", image: "/images/services/clinic.jpg", linkForm: "/clinic-form", link: "/clinic" },
-    { name: "School Cleaning", image: "/images/services/school.jpg", linkForm: "/school-form", link: "/school" },
+    { name: "Commercial Disinfectant Cleaning", image: "/images/services/commercial.png", linkForm: "/commercial-form", link: "/commercial" },
+    { name: "Office Cleaning", image: "/images/services/office.png", linkForm: "/office-form", link: "/office" },
+    { name: "Restaurant & Cafe Cleaning", image: "/images/services/restaurant.png", linkForm: "/restaurant-form", link: "/restaurant" },
+    { name: "Gym Cleaning", image: "/images/services/gym.png", linkForm: "/gym-form", link: "/gym" },
+    { name: "Clinic / Urgent Care Cleaning", image: "/images/services/clinic.png", linkForm: "/clinic-form", link: "/clinic" },
+    { name: "School Cleaning", image: "/images/services/school.png", linkForm: "/school-form", link: "/school" },
 ]
 const Home = () => {
 

@@ -25,7 +25,7 @@ const GymCleaning = () => {
                 <ServicePageContent
                     title={"Gym Cleaning"}
                     dialog={"A sparkling clean environment keeps your gym membership strong, growing, and healthy. And the COVID-19 pandemic made regular sanitation and disinfection of gyms an essential public health requirement. If your employees are doing the heavy lifting, it’s time you offloaded the work to gym cleaning professionals so you can concentrate on providing the ultimate customer experience. We have the products, equipment, and expertise to make fitness centers of all sizes safe, and relieve any customer anxiety. Our Live & Real-Time Booking Pages provide instant pricing and savings when you book recurring visits."}
-                    image={"/images/services/gym.jpg"}
+                    image={"/images/services/gym.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>

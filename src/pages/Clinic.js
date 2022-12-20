@@ -25,7 +25,7 @@ const Clinic = () => {
                 <ServicePageContent
                     title={"Clinic / Urgent Care Cleaning"}
                     dialog={"Medical and healthcare facilities must continuously meet the most stringent standards of cleanliness. A pristine clinic is fundamental to protecting patients, medical professionals, and visitors from the spread of infection. Elimination of viruses and bacteria from reception areas, treatment rooms, and offices by trained professionals is a public health responsibility we take very seriously. We ensure all surfaces are thoroughly cleaned and disinfected to create a healthy, pathogen-free environment. Our disinfection procedure eliminates bacteria and viruses such as SARS-CoV-2, E. Coli, Salmonella, MRSA, Listeria, Avian Flu, Norovirus, and many others. Our Live & Real-Time Booking Pages provide instant pricing and savings when you book recurring visits."}
-                    image={"/images/services/clinic.jpg"}
+                    image={"/images/services/clinic.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>

@@ -19,7 +19,7 @@ const Commercial = () => {
                 <ServicePageContent
                     title={"Commercial Disinfectant Cleaning"}
                     dialog={"Our commercial disinfectant cleaning is a proven and certified disinfection method to combat against bacteria and viruses including COVID-19. Your commercial space will be made safe for its occupants using the same validated methods and stringent standards as those practiced in many hospitals, clinics, dental offices, and patient care facilities. Use our Live Pricing & Real-Time Booking Pages to customize your commercial disinfectant cleaning to your unique commercial disinfectant cleaning needs, and instantly view personalized pricing on our website. Book online or call us and you will also receive an instant text and/or email confirmation. Save when you book recurring cleanings!"}
-                    image={"/images/services/service1.jpg"}
+                    image={"/images/services/commercial.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>

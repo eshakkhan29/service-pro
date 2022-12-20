@@ -25,7 +25,7 @@ const Restaurant = () => {
                 <ServicePageContent
                     title={"Restaurant and Cafe Cleaning"}
                     dialog={"Are you using staff members to clean and sanitize your kitchen and dining areas? We’d like to take this essential restaurant management task off your team’s hands so they can focus on creating and serving delicious food that delights your hard won customers. We’ll work when you need us, with no disruption to hours of business. Our restaurant cleaning professionals are trained in all aspects of health and safety to help give your eatery a welcoming ambiance at all times. Our Live & Real-Time Booking Pages provide customizable options, instant pricing, and savings when you book recurring visits."}
-                    image={"/images/services/restaurant.jpg"}
+                    image={"/images/services/restaurant.png"}
                     features={features}
                 />
                 <div className='text-center container px-lg-0 pb-5 pt-4'>
