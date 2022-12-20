@@ -1,7 +1,6 @@
 @media (max-width: 991px) {
-    .bannerHeading {
+    .bannerHeading h1{
         font-size: 40px;
-        padding: 150px 0px;
     }
 
     .serviceHeading {
@@ -106,6 +105,7 @@
 }
 
 @media (max-width: 600px) {
+
     .logo-link {
         margin-left: 12px;
     }
@@ -132,10 +132,12 @@
     .arrow {
         margin-top: 4px;
     }
-
-    .bannerHeading {
-        font-size: 25px;
-        padding: 100px 10px;
+.banner{
+    height: 70vh;
+}
+    .bannerHeading h1{
+        font-size: 27px;
+        padding: 0px 12px;
     }
 
     .serviceHeading {

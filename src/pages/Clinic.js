@@ -4,16 +4,16 @@ import PageBanner from '../components/common/PageBanner';
 import ServicePageContent from '../components/common/ServicePageContent';
 const features = [
     { feature: "Sweep, mop, and vacuum all floors and carpets" },
-    { feature: "Sanitize all high-touch surfaces" },
     { feature: "Dust and clean all furniture" },
-    { feature: "Clean and polish all mirrors and windows" },
-    { feature: "Sanitize all workout area surfaces" },
-    { feature: "Disinfect all equipment and workout machines" },
-    { feature: "Sanitize benches and locker doors" },
-    { feature: "Clean shower walls, doors, curtains, and fixtures" },
-    { feature: "Check shower areas for mold and fungus" },
-    { feature: "Disinfect all sinks and toilets" },
-    { feature: "Polish and disinfect bathroom fixtures" },
+    { feature: "Clean walls, shelving, and baseboards" },
+    { feature: "Clean and polish all windows and mirrors" },
+    { feature: "Hospital grade disinfectant used" },
+    { feature: "Clean and disinfect light switches and door handles" },
+    { feature: "Disinfect all high-touch surfaces" },
+    { feature: "Disinfect all medical equipment" },
+    { feature: "Polish and disinfect treatment room fixtures" },
+    { feature: "Sanitize all washrooms" },
+    { feature: "Disinfect all sinks, toilets, and fixtures" },
     { feature: "Empty trash bins and replace liners" }
 ]
 const Clinic = () => {

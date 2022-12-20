@@ -3,13 +3,20 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: calc(100vh - 138px);
 }
 
 .bannerHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.bannerHeading h1 {
     font-size: 50px;
     color: white;
     text-align: center;
-    padding: 250px 0px;
 }
 
 .sectionHeader {
@@ -34,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
 }
 
@@ -52,7 +59,7 @@
 }
 
 .seeMore:hover {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
 .cardImage {
