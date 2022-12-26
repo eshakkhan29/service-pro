@@ -129,364 +129,353 @@ const CommercialForm = () => {
       <PageBanner text={"Request a Quote - Commercial Disinfectant Cleaning"} />
 
       {/* full page */}
-      <form onSubmit={handelSubmitData}>
-        <div className="pageBgPatten">
-          <div className="container px-lg-0 py-5">
-            {/* page heading */}
-            <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
-            {/* page form full */}
-            <div className="formStepOne py-md-5 py-4 m-auto mt-3 px-3 rounded-3">
-              {/* Form step one */}
-              <h2>STEP 1: Tell us about your commercial space.</h2>
-              <div className="inputForm d-flex align-items-center justify-content-between py-4">
-                <p className="m-0">What is the primary use of the space?</p>
-                <input
-                  onChange={(e) => setCommercialSpace(e.target.value)}
-                  className=""
-                  type="text"
-                  placeholder="Commercial space"
-                />
-              </div>
-              <div className="inputForm py-3">
-                <p>Total Square Footage of entire area you want cleaned?</p>
-                <input
-                  onChange={(e) => setTotalSquareFootage(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Enter the square footage for the total area that requires cleaning.  Feel free to add more into."
-                />
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">Height of Ceilings</p>
-                <input
-                  onChange={(e) => setHeightOfCeilings(e.target.value)}
-                  className=""
-                  type="text"
-                  placeholder="Average height of ceiling"
-                />
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  Approx. Total # of all persons in the space?
-                </p>
-                <select
-                  onChange={(e) => setPersons(e.target.value)}
-                  name=""
-                  id=""
-                >
-                  {personsCount.map((person, i) => (
-                    <option key={i} value={person.person}>
-                      {person.person}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  At what frequency would you like to have the cleaning?
-                </p>
-                <select
-                  onChange={(e) => setFrequency(e.target.value)}
-                  name=""
-                  id=""
-                >
-                  {frequencys.map((frequency, i) => (
-                    <option key={i} value={frequency.frequency}>
-                      {frequency.frequency}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              {/* input button group */}
-              <div className="inputForm py-3">
-                <p className="m-0">
-                  What time of day would you like the space cleaned?
-                </p>
-                <div className="buttonGroupCleaned mt-4 text-center">
-                  <button
-                    onClick={() => setButtonGroup("during")}
-                    className={`space-cleaned-btn border--left ${
-                      buttonGroup === "during" ? "button--active" : ""
-                    }`}
-                  >
-                    During Regular Business hours
-                  </button>
-                  <button
-                    onClick={() => setButtonGroup("outside")}
-                    className={`space-cleaned-btn border--left border--middle ${
-                      buttonGroup === "outside" ? "button--active" : ""
-                    }`}
-                  >
-                    Outside Regular Business hours
-                  </button>
-                  <button
-                    onClick={() => setButtonGroup("overnight")}
-                    className={`space-cleaned-btn borderLg border--right ${
-                      buttonGroup === "overnight" ? "button--active" : ""
-                    }`}
-                  >
-                    Overnight (11 p.m. to 7 a.m)
-                  </button>
-                </div>
-              </div>
-              {/* yes no button group */}
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  To your knowledge, has anyone in the space contracted COVID-19
-                  in the last month?
-                </p>
-                <div className="yes-no-but-group mt-4 text-center">
-                  <button
-                    onClick={() => setYesNo("yes")}
-                    className={`yes-no-btn borderRight ${
-                      yesNo === "yes" ? "button--active" : ""
-                    }`}
-                  >
-                    Yes
-                  </button>
-                  <button
-                    onClick={() => setYesNo("no")}
-                    className={`yes-no-btn ${
-                      yesNo === "no" ? "button--active" : ""
-                    }`}
-                  >
-                    No
-                  </button>
-                </div>
-              </div>
-              <hr style={{ color: "#a1a1a1" }} />
-              {/* Form step tow */}
-              <h2>STEP 2: Select Space types.</h2>
-              <p className="stepTowP">
-                Select the quantity for each space type in the area you wish
-                cleaned. This will help ensure we provide you the most accurate
-                estimate possible in just a few minutes.
+
+      <div className="pageBgPatten">
+        <div className="container px-lg-0 py-5">
+          {/* page heading */}
+          <PageFormHeader title={"Commercial Disinfectant Cleaning"} />
+          {/* page form full */}
+          <div className="formStepOne py-md-5 py-4 m-auto mt-3 px-3 rounded-3">
+            {/* Form step one */}
+            <h2>STEP 1: Tell us about your commercial space.</h2>
+            <div className="inputForm d-flex align-items-center justify-content-between py-4">
+              <p className="m-0">What is the primary use of the space?</p>
+              <input
+                onChange={(e) => setCommercialSpace(e.target.value)}
+                className=""
+                type="text"
+                placeholder="Commercial space"
+              />
+            </div>
+            <div className="inputForm py-3">
+              <p>Total Square Footage of entire area you want cleaned?</p>
+              <input
+                onChange={(e) => setTotalSquareFootage(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Enter the square footage for the total area that requires cleaning.  Feel free to add more into."
+              />
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">Height of Ceilings</p>
+              <input
+                onChange={(e) => setHeightOfCeilings(e.target.value)}
+                className=""
+                type="text"
+                placeholder="Average height of ceiling"
+              />
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                Approx. Total # of all persons in the space?
               </p>
-
-              {/* services space input count */}
-              <div className="serviceSpace">
-                <FormSpaceType
-                  toolTip={
-                    "Total number of ENCLOSED offices (excluding work station or cubicles).  Enclosed office have ceiling to floor walls/separators with doors.  Typically reserved for management, supervisors, personnel requiring privacy or a lockable area of work.  Sometimes contain more than 1 person in an Enclosed office space."
-                  }
-                  title={"ENCLOSED Offices Spaces"}
-                  image={"/images/servicesForm/enclosedOffice.png"}
-                  setFun={setOfficesSpaces}
-                  set={officesSpaces}
-                />
-                <FormSpaceType
-                  title={" Conference or Meeting rooms"}
-                  toolTip={
-                    "Meeting or conference rooms are enclosed spaces typically used for gathering of teams, usually around a table.  Often include videoconferencing equipment and wall mounted screens or white boards"
-                  }
-                  image={"/images/servicesForm/conference_rooms.png"}
-                  setFun={setMeetingRooms}
-                  set={meetingRooms}
-                />
-                <FormSpaceType
-                  title={" Men & Women Bathrooms"}
-                  toolTip={
-                    "What is the total number of Bathrooms in the entire area you wished to have cleaned."
-                  }
-                  image={"/images/servicesForm/bathrooms.png"}
-                  setFun={setBathrooms}
-                  set={bathrooms}
-                />
-                <FormSpaceType
-                  title={" Cafeterias & Dining Areas"}
-                  toolTip={
-                    "This should include cafeterias, lounge area for employees, or kitchenettes for employee self service.  It does not include a full kitchen area for the preparation of meals."
-                  }
-                  image={"/images/servicesForm/cafeterias.png"}
-                  setFun={setCafeterias}
-                  set={cafeterias}
-                />
-                <FormSpaceType
-                  title={"Lounging or Employee / Visitors areas"}
-                  toolTip={
-                    "The Lounging or Employee / Visitors areas areas Separate to the reception area."
-                  }
-                  image={"/images/servicesForm/lounging_areas.png"}
-                  setFun={setLounging}
-                  set={lounging}
-                />
-              </div>
-              <hr style={{ color: "#a1a1a1" }} />
-
-              {/* Form step three */}
-              <h2>STEP 3: Type of Flooring</h2>
-              <p className="stepTowP">
-                Provide your best assessment of the overall flooring type in the
-                area you would like cleaned
+              <select
+                onChange={(e) => setPersons(e.target.value)}
+                name=""
+                id=""
+              >
+                {personsCount.map((person, i) => (
+                  <option key={i} value={person.person}>
+                    {person.person}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                At what frequency would you like to have the cleaning?
               </p>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  Wood - Approximate % of the total floor space?
-                </p>
-                <select onChange={(e) => setWood(e.target.value)} name="" id="">
-                  {percentages.map((percentage, i) => (
-                    <option key={i} value={percentage.percent}>
-                      {percentage.percent}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  Cement - Approximate % of the floor space?
-                </p>
-                <select
-                  onChange={(e) => setCement(e.target.value)}
-                  name=""
-                  id=""
-                >
-                  {percentages.map((percentage, i) => (
-                    <option key={i} value={percentage.percent}>
-                      {percentage.percent}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  Carpeting - Approximate % of the floor space? (excludes area &
-                  moveable rugs)
-                </p>
-                <select
-                  onChange={(e) => setCarpeting(e.target.value)}
-                  name=""
-                  id=""
-                >
-                  {percentages.map((percentage, i) => (
-                    <option key={i} value={percentage.percent}>
-                      {percentage.percent}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between py-3">
-                <p className="m-0">
-                  Ceramic/Marble/Finished stone - Approximate % of the floor
-                  space?
-                </p>
-                <select
-                  onChange={(e) => setCeramic(e.target.value)}
-                  name=""
-                  id=""
-                >
-                  {percentages.map((percentage, i) => (
-                    <option key={i} value={percentage.percent}>
-                      {percentage.percent}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="inputForm py-3">
-                <p>Is there any other information regarding the floor space?</p>
-                <input
-                  onChange={(e) => setFloorSpace(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Please add any other information you feel we should know about and is pertinent or missing in the above."
-                />
-              </div>
-              <hr style={{ color: "#a1a1a1" }} />
-
-              {/* Form step four customer info */}
-              <h2>STEP 4: Let us know who we'll be contacting</h2>
-              <p className="stepTowP">
-                You will instantly receive an email summarizing the information
-                entered in this Quote Request. In addition, we will call you
-                within the next 10 minutes to provide you a quote. Thanks you &
-                talk real soon!
+              <select
+                onChange={(e) => setFrequency(e.target.value)}
+                name=""
+                id=""
+              >
+                {frequencys.map((frequency, i) => (
+                  <option key={i} value={frequency.frequency}>
+                    {frequency.frequency}
+                  </option>
+                ))}
+              </select>
+            </div>
+            {/* input button group */}
+            <div className="inputForm py-3">
+              <p className="m-0">
+                What time of day would you like the space cleaned?
               </p>
-              <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-3">
-                <input
-                  onChange={(e) => setFirstName(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="First name"
-                />
-                <input
-                  onChange={(e) => setLastName(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Last name"
-                />
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-2">
-                <input
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-100"
-                  type="email"
-                  placeholder="Email"
-                />
-                <input
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-100"
-                  type="number"
-                  placeholder="Phone number"
-                />
-              </div>
-              <hr style={{ color: "#a1a1a1" }} />
-
-              {/* Form step five customer address */}
-              <h2>STEP 5: Location of the commercial space</h2>
-              <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-3">
-                <input
-                  onChange={(e) => setAddress(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Street Address"
-                />
-                <input
-                  onChange={(e) => setUnit(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Unit/Apt/Suite #"
-                />
-              </div>
-              <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-2">
-                <input
-                  onChange={(e) => setCity(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="City"
-                />
-                <select
-                  onChange={(e) => setProvince(e.target.value)}
-                  className="w-100"
-                  name=""
-                  id=""
-                >
-                  {provinces.map((province, i) => (
-                    <option key={i} value={province.province}>
-                      {province.province}
-                    </option>
-                  ))}
-                </select>
-                <input
-                  onChange={(e) => setPostalCode(e.target.value)}
-                  className="w-100"
-                  type="text"
-                  placeholder="Postal Code"
-                />
-              </div>
-              <hr style={{ color: "#a1a1a1" }} />
-              {/* Form submit button */}
-              <div className="text-center pt-3">
+              <div className="buttonGroupCleaned mt-4 text-center">
                 <button
-                  type="submit"
-                  onClick={handelSubmitData}
-                  className="quoteButton"
+                  onClick={() => setButtonGroup("during")}
+                  className={`space-cleaned-btn border--left ${
+                    buttonGroup === "during" ? "button--active" : ""
+                  }`}
                 >
-                  Request a quote{" "}
+                  During Regular Business hours
+                </button>
+                <button
+                  onClick={() => setButtonGroup("outside")}
+                  className={`space-cleaned-btn border--left border--middle ${
+                    buttonGroup === "outside" ? "button--active" : ""
+                  }`}
+                >
+                  Outside Regular Business hours
+                </button>
+                <button
+                  onClick={() => setButtonGroup("overnight")}
+                  className={`space-cleaned-btn borderLg border--right ${
+                    buttonGroup === "overnight" ? "button--active" : ""
+                  }`}
+                >
+                  Overnight (11 p.m. to 7 a.m)
                 </button>
               </div>
             </div>
+            {/* yes no button group */}
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                To your knowledge, has anyone in the space contracted COVID-19
+                in the last month?
+              </p>
+              <div className="yes-no-but-group mt-4 text-center">
+                <button
+                  onClick={() => setYesNo("yes")}
+                  className={`yes-no-btn borderRight ${
+                    yesNo === "yes" ? "button--active" : ""
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  onClick={() => setYesNo("no")}
+                  className={`yes-no-btn ${
+                    yesNo === "no" ? "button--active" : ""
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+            </div>
+            <hr style={{ color: "#a1a1a1" }} />
+            {/* Form step tow */}
+            <h2>STEP 2: Select Space types.</h2>
+            <p className="stepTowP">
+              Select the quantity for each space type in the area you wish
+              cleaned. This will help ensure we provide you the most accurate
+              estimate possible in just a few minutes.
+            </p>
+
+            {/* services space input count */}
+            <div className="serviceSpace">
+              <FormSpaceType
+                toolTip={
+                  "Total number of ENCLOSED offices (excluding work station or cubicles).  Enclosed office have ceiling to floor walls/separators with doors.  Typically reserved for management, supervisors, personnel requiring privacy or a lockable area of work.  Sometimes contain more than 1 person in an Enclosed office space."
+                }
+                title={"ENCLOSED Offices Spaces"}
+                image={"/images/servicesForm/enclosedOffice.png"}
+                setFun={setOfficesSpaces}
+                set={officesSpaces}
+              />
+              <FormSpaceType
+                title={" Conference or Meeting rooms"}
+                toolTip={
+                  "Meeting or conference rooms are enclosed spaces typically used for gathering of teams, usually around a table.  Often include videoconferencing equipment and wall mounted screens or white boards"
+                }
+                image={"/images/servicesForm/conference_rooms.png"}
+                setFun={setMeetingRooms}
+                set={meetingRooms}
+              />
+              <FormSpaceType
+                title={" Men & Women Bathrooms"}
+                toolTip={
+                  "What is the total number of Bathrooms in the entire area you wished to have cleaned."
+                }
+                image={"/images/servicesForm/bathrooms.png"}
+                setFun={setBathrooms}
+                set={bathrooms}
+              />
+              <FormSpaceType
+                title={" Cafeterias & Dining Areas"}
+                toolTip={
+                  "This should include cafeterias, lounge area for employees, or kitchenettes for employee self service.  It does not include a full kitchen area for the preparation of meals."
+                }
+                image={"/images/servicesForm/cafeterias.png"}
+                setFun={setCafeterias}
+                set={cafeterias}
+              />
+              <FormSpaceType
+                title={"Lounging or Employee / Visitors areas"}
+                toolTip={
+                  "The Lounging or Employee / Visitors areas areas Separate to the reception area."
+                }
+                image={"/images/servicesForm/lounging_areas.png"}
+                setFun={setLounging}
+                set={lounging}
+              />
+            </div>
+            <hr style={{ color: "#a1a1a1" }} />
+
+            {/* Form step three */}
+            <h2>STEP 3: Type of Flooring</h2>
+            <p className="stepTowP">
+              Provide your best assessment of the overall flooring type in the
+              area you would like cleaned
+            </p>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                Wood - Approximate % of the total floor space?
+              </p>
+              <select onChange={(e) => setWood(e.target.value)} name="" id="">
+                {percentages.map((percentage, i) => (
+                  <option key={i} value={percentage.percent}>
+                    {percentage.percent}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">Cement - Approximate % of the floor space?</p>
+              <select onChange={(e) => setCement(e.target.value)} name="" id="">
+                {percentages.map((percentage, i) => (
+                  <option key={i} value={percentage.percent}>
+                    {percentage.percent}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                Carpeting - Approximate % of the floor space? (excludes area &
+                moveable rugs)
+              </p>
+              <select
+                onChange={(e) => setCarpeting(e.target.value)}
+                name=""
+                id=""
+              >
+                {percentages.map((percentage, i) => (
+                  <option key={i} value={percentage.percent}>
+                    {percentage.percent}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between py-3">
+              <p className="m-0">
+                Ceramic/Marble/Finished stone - Approximate % of the floor
+                space?
+              </p>
+              <select
+                onChange={(e) => setCeramic(e.target.value)}
+                name=""
+                id=""
+              >
+                {percentages.map((percentage, i) => (
+                  <option key={i} value={percentage.percent}>
+                    {percentage.percent}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="inputForm py-3">
+              <p>Is there any other information regarding the floor space?</p>
+              <input
+                onChange={(e) => setFloorSpace(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Please add any other information you feel we should know about and is pertinent or missing in the above."
+              />
+            </div>
+            <hr style={{ color: "#a1a1a1" }} />
+
+            {/* Form step four customer info */}
+            <h2>STEP 4: Let us know who we'll be contacting</h2>
+            <p className="stepTowP">
+              You will instantly receive an email summarizing the information
+              entered in this Quote Request. In addition, we will call you
+              within the next 10 minutes to provide you a quote. Thanks you &
+              talk real soon!
+            </p>
+            <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-3">
+              <input
+                onChange={(e) => setFirstName(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="First name"
+              />
+              <input
+                onChange={(e) => setLastName(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Last name"
+              />
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-2">
+              <input
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-100"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                onChange={(e) => setPhone(e.target.value)}
+                className="w-100"
+                type="number"
+                placeholder="Phone number"
+              />
+            </div>
+            <hr style={{ color: "#a1a1a1" }} />
+
+            {/* Form step five customer address */}
+            <h2>STEP 5: Location of the commercial space</h2>
+            <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-3">
+              <input
+                onChange={(e) => setAddress(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Street Address"
+              />
+              <input
+                onChange={(e) => setUnit(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Unit/Apt/Suite #"
+              />
+            </div>
+            <div className="inputForm d-flex align-items-center justify-content-between gap-4 py-2">
+              <input
+                onChange={(e) => setCity(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="City"
+              />
+              <select
+                onChange={(e) => setProvince(e.target.value)}
+                className="w-100"
+                name=""
+                id=""
+              >
+                {provinces.map((province, i) => (
+                  <option key={i} value={province.province}>
+                    {province.province}
+                  </option>
+                ))}
+              </select>
+              <input
+                onChange={(e) => setPostalCode(e.target.value)}
+                className="w-100"
+                type="text"
+                placeholder="Postal Code"
+              />
+            </div>
+            <hr style={{ color: "#a1a1a1" }} />
+            {/* Form submit button */}
+            <div className="text-center pt-3">
+              <button onClick={handelSubmitData} className="quoteButton">
+                Request a quote{" "}
+              </button>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 };
