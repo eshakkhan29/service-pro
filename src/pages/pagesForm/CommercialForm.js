@@ -101,7 +101,7 @@ const CommercialForm = () => {
   const navigate = useNavigate();
   const handelSubmitData = (e) => {
     e.preventDefault();
-    console.log(fullData);
+
     fetch("http://localhost:5001/api/commercial-request", {
       method: "POST",
       headers: {
