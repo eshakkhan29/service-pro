@@ -85,6 +85,9 @@ const ClinicUrgentCareForm = () => {
     }
 
     const handelSubmit = () => {
+        if (fullData?.user_data?.email === "") {
+            alert("enter your email")
+        }
         console.log(fullData);
     }
     return (
