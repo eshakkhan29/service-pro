@@ -104,7 +104,10 @@ const RestaurantForm = () => {
   const navigate = useNavigate();
   const handelSubmit = (e) => {
     e.preventDefault();
-
+    console.log(fullData);
+    if (fullData.user_data.email === "") {
+      return;
+    }
     fetch("http://localhost:5001/api/resturent-clean-request", {
       method: "POST",
       headers: {

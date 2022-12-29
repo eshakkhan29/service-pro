@@ -96,8 +96,11 @@ const OfficeCleaningForm = () => {
   };
   const navigate = useNavigate();
   const handelSubmit = (e) => {
+    console.log(fullData);
     e.preventDefault();
-
+    if (fullData.user_data.email === "") {
+      return;
+    }
     fetch("http://localhost:5001/api/office-clean-request", {
       method: "POST",
       headers: {

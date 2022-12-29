@@ -101,12 +101,20 @@ const CommercialForm = () => {
   const navigate = useNavigate();
   const handelSubmitData = (e) => {
     e.preventDefault();
+    console.log(fullData);
+    if (fullData.user_data.email === "") {
+      return;
+    }
+    const headers = {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS",
+      mode: "no-cors",
+    };
 
     fetch("http://localhost:5001/api/commercial-request", {
       method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
+      headers: headers,
       body: JSON.stringify(fullData),
     })
       .then((response) => response.json())
@@ -414,6 +422,7 @@ const CommercialForm = () => {
                 className="w-100"
                 type="email"
                 placeholder="Email"
+                required
               />
               <input
                 onChange={(e) => setPhone(e.target.value)}

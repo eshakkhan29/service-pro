@@ -110,6 +110,9 @@ const GymCleaningForm = () => {
   const handelSubmit = (e) => {
     console.log(fullData);
     e.preventDefault();
+    if (fullData.user_data.email === "") {
+      return;
+    }
     console.log(fullData);
     fetch("http://localhost:5001/api/gym-clean-request", {
       method: "POST",
