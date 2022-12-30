@@ -108,7 +108,7 @@ const RestaurantForm = () => {
     if (fullData.user_data.email === "") {
       return;
     }
-    fetch("https://serveprojanitorial.ca/api/resturent-clean-request", {
+    fetch("http://serveprojanitorial.ca/api/resturent-clean-request", {
       method: "POST",
       headers: {
         "content-type": "application/json",

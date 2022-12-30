@@ -108,7 +108,7 @@ const ClinicUrgentCareForm = () => {
     if (fullData.user_data.email === "") {
       return;
     }
-    fetch("https://serveprojanitorial.ca/api/clinic-clean-request", {
+    fetch("http://serveprojanitorial.ca/api/clinic-clean-request", {
       method: "POST",
       headers: {
         "content-type": "application/json",
