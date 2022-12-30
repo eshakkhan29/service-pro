@@ -112,7 +112,7 @@ const CommercialForm = () => {
       mode: "no-cors",
     };
 
-    fetch("http://serveprojanitorial.ca/api/commercial-request", {
+    fetch("http://92.205.108.164/api/commercial-request", {
       method: "POST",
       headers: headers,
       body: JSON.stringify(fullData),
