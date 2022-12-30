@@ -105,16 +105,12 @@ const CommercialForm = () => {
     if (fullData.user_data.email === "") {
       return;
     }
-    const headers = {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS",
-      mode: "no-cors",
-    };
 
     fetch("http://0.0.0.0:5001/api/commercial-request", {
       method: "POST",
-      headers: headers,
+      headers: {
+        "content-type": "application/json",
+      },
       body: JSON.stringify(fullData),
     })
       .then((response) => response.json())
