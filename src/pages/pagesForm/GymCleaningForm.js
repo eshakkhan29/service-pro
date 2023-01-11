@@ -114,7 +114,7 @@ const GymCleaningForm = () => {
       return;
     }
     console.log(fullData);
-    fetch("http://serveprojanitorial.ca/api/gym-clean-request", {
+    fetch("https://serveprojanitorial.ca/api/gym-clean-request", {
       method: "POST",
       headers: {
         "content-type": "application/json",

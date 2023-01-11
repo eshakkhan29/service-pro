@@ -106,7 +106,7 @@ const CommercialForm = () => {
       return;
     }
 
-    fetch("http://serveprojanitorial.ca/api/commercial-request", {
+    fetch("https://serveprojanitorial.ca/api/commercial-request", {
       method: "POST",
       headers: {
         "content-type": "application/json",

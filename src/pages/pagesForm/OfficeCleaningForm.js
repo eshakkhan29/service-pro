@@ -101,7 +101,7 @@ const OfficeCleaningForm = () => {
     if (fullData.user_data.email === "") {
       return;
     }
-    fetch("http://serveprojanitorial.ca/api/office-clean-request", {
+    fetch("https://serveprojanitorial.ca/api/office-clean-request", {
       method: "POST",
       headers: {
         "content-type": "application/json",
